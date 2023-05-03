@@ -1,0 +1,308 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Source Sans Pro Semi-Bold';
+    src: url(../fonts/SourceSansPro-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Regular';
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Light';
+    src: url(../fonts/SourceSansPro-Light.ttf);
+    font-weight: 300;
+}
+
+:root {
+    --colorPrimary: #040725;
+    --colorSecundary: #133575;
+    --colorTertiary: #111540;
+    --colorWhite: #FFFFFF;
+    --colorButton: #141A5E;
+    --colorTransaction: #afb5fa;
+
+    --font-text-light: "Source Sans Pro Light", sans-serif;
+    --font-text-regular: "Source Sans Pro Regular", sans-serif;
+    --font-text-semi: "Source Sans Pro Semi-Bold", sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--colorTertiary);
+    text-decoration: none;
+}
+
+/* Global */
+button {
+    background-color: var(--colorButton);
+    color: var(--colorWhite);
+    min-width: 117px;
+    min-height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-family: var(--font-text-regular);
+    font-size: 1.2500em;
+}
+
+section {
+    margin-top: 10px;
+    background-color: var(--colorPrimary);
+}
+
+h2 {
+    color: var(--colorWhite);
+    background-color: var(--colorPrimary);
+    font-family: var(--font-text-semi);
+    font-size: 2em;
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+main {
+    min-width: 300px;
+}
+
+/* Nav */
+nav {
+    max-height: 102px;
+    background-color: var(--colorPrimary);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 1140px;
+    background-color: var(--colorPrimary);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--colorPrimary);
+}
+
+.logo-container > img {
+    background-color: var(--colorPrimary);
+    width: 50px;
+}
+
+.logo-container > p {
+    padding-left: 20px;
+    font-family: var(--font-text-semi);
+    font-size: 1.2500em;
+    color: var(--colorWhite);
+    background-color: var(--colorPrimary);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--colorPrimary);
+}
+
+.menu > a {
+    color: var(--colorWhite);
+    background-color: var(--colorPrimary);  
+    margin-right: 33px;
+    font-family: var(--font-text-regular);
+    font-size: 1.2500em;
+    transition-duration: .5s;
+}
+
+.menu > a:hover {
+    text-decoration: none;
+    color: var(--colorTransaction);
+}
+
+.home {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .logo-container {
+        margin-bottom: 5px;
+    }
+    
+    .menu > a {
+        margin: 0 10px;
+    }
+
+    .menu > button {
+        display: none;
+    }
+
+    .menu .home {
+        display: inline;
+        color: #8a94ff;
+        pointer-events: none;
+    }    
+}
+
+/* sobre */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 1140px;
+    gap: 20px;
+    background-color: var(--colorPrimary);
+}
+
+.about > img {
+    width: 250px;
+    background-color: var(--colorPrimary);
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--colorPrimary);
+}
+
+.information > p {
+    color: var(--colorWhite);
+    background-color: var(--colorPrimary);
+    font-family: var(--font-text-regular);
+    font-size: 1.2500em;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.information > button {
+    align-self: start;
+    transition-duration: .5s;
+}
+
+.information > button:hover {
+    cursor: pointer;
+    background-color: var(--colorTransaction);
+    color: var(--colorPrimary);
+    font-family: var(--font-text-semi);
+    font-weight: 600;
+}
+
+.information > h2 {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .about > img {
+        width: 180px;
+    }
+}
+
+/* services */
+.services {
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 1140px;
+    background-color: var(--colorPrimary);
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    gap: 40px;
+    background-color: var(--colorPrimary);
+}
+
+.services-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 14.0625em;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--colorSecundary);
+}
+
+.services-card > img {
+    width: 6.25em;
+    background-color: var(--colorSecundary);
+}
+
+.services-card > p {
+    font-family: var(--font-text-regular);
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--colorWhite);
+    background-color: var(--colorSecundary);
+}
+
+@media (max-width: 768px) {
+    .services-card {
+        padding: 0px 10px;
+    }
+
+    .services-card > p {
+        font-size: 1.2500em;
+    }
+}
+
+/* skills */
+.skills{
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 1140px;
+    background-color: var(--colorPrimary);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10.625em, 1fr));
+    grid-gap: 2em;
+    background-color: var(--colorPrimary);
+  }
+  
+.skills-card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    aspect-ratio: 1/1;
+    background-color: var(--colorSecundary);
+}
+
+.skills-card > img {
+    width: 6.25em;
+    background-color: var(--colorSecundary);
+}
+
+.skills-card > p {
+    font-family: var(--font-text-regular);
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--colorWhite);
+    background-color: var(--colorSecundary);
+}
+
+@media (max-width: 768px) {
+    .skills-card {
+        padding: 20px;
+    }
+}
