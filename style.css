@@ -157,6 +157,12 @@ nav {
     }    
 }
 
+@media (max-width: 480px) {
+    .menu > a {
+        font-size: 16px;
+    }
+}
+
 /* sobre */
 .about {
     display: flex;
@@ -182,7 +188,7 @@ nav {
 }
 
 .information > p {
-    color: var(--colorWhite);
+    color: #eeeeeeb6;
     background-color: var(--colorPrimary);
     font-family: var(--font-text-regular);
     font-size: 1.2500em;
@@ -217,6 +223,20 @@ nav {
     }
 }
 
+@media (max-width: 480px) {
+    .information > p {
+        font-size: 16px;
+    }
+
+    .information > button {
+        font-size: 18;
+    }
+
+    .information > h2 {
+        font-size: 22px;
+    }
+}
+
 /* services */
 .services {
     margin: 0 auto;
@@ -227,7 +247,7 @@ nav {
 
 .grid-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(19em, 1fr));
     gap: 40px;
     background-color: var(--colorPrimary);
 }
@@ -257,12 +277,31 @@ nav {
 }
 
 @media (max-width: 768px) {
-    .services-card {
-        padding: 0px 10px;
+    .services-card > p {
+        font-size: 1.2500em;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+        background-color: var(--colorPrimary);
+    }
+
+    .services-card > img {
+        width: 50px;
+        background-color: var(--colorSecundary);
     }
 
     .services-card > p {
-        font-size: 1.2500em;
+        font-size: 16px;
+    }
+
+    .services > h2 {
+        font-size: 22px;
     }
 }
 
@@ -279,7 +318,7 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(10.625em, 1fr));
     grid-gap: 2em;
     background-color: var(--colorPrimary);
-  }
+}
   
 .skills-card {
     display: flex;
@@ -305,8 +344,37 @@ nav {
     background-color: var(--colorSecundary);
 }
 
-/* @media (max-width: 768px) {
-    .skills-card {
-        padding: 20px;
+@media (max-width: 480px) {
+    .skills-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2em;
+        background-color: var(--colorPrimary);
     }
-} */
+
+    .skills-card {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        height: 95px;
+        width: 95px;
+        padding: 10px;
+        background-color: var(--colorSecundary);
+    }
+
+    .skills-card > img {
+        width: 45px;
+        background-color: var(--colorSecundary);
+    }
+
+    .skills-card > p {
+        font-size: 16px;
+    }
+
+    .skills > h2 {
+        font-size: 22px;
+    }
+}
