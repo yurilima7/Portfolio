@@ -25,6 +25,7 @@
     --colorWhite: #FFFFFF;
     --colorButton: #141A5E;
     --colorTransaction: #afb5fa;
+    --colorDescription: #eeeeeeb6;
 
     --font-text-light: "Source Sans Pro Light", sans-serif;
     --font-text-regular: "Source Sans Pro Regular", sans-serif;
@@ -188,7 +189,7 @@ nav {
 }
 
 .information > p {
-    color: #eeeeeeb6;
+    color: var(--colorDescription);
     background-color: var(--colorPrimary);
     font-family: var(--font-text-regular);
     font-size: 1.2500em;
@@ -376,5 +377,65 @@ nav {
 
     .skills > h2 {
         font-size: 22px;
+    }
+}
+
+.projects {
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 1140px;
+    background-color: var(--colorPrimary);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+    background-color: var(--colorPrimary);
+}
+
+.projects-card {
+    border-radius: 5px;
+    background-color: var(--colorSecundary);
+}
+
+.projects-card > img {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.projects-card > h2 {
+    font-family: var(--font-text-semi);
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    color: var(--colorWhite);
+    background-color: var(--colorSecundary);
+}
+
+.projects-card > p {
+    font-family: var(--font-text-regular);
+    font-size: 1.125em;
+    text-align: justify;
+    padding: 10px;
+    color: var(--colorDescription);
+    background-color: var(--colorSecundary);
+}
+
+@media (max-width: 480px) {
+    .projects-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2em;
+        background-color: var(--colorPrimary);
+    }
+
+    .projects-card > h2 {
+        font-size: 16px;
+    }
+
+    .projects-card > p {
+        font-size: 12px;
     }
 }
