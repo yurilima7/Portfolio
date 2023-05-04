@@ -423,6 +423,10 @@ nav {
 }
 
 @media (max-width: 480px) {
+    .projects > h2 {
+        font-size: 22px;
+    }
+    
     .projects-grid {
         display: flex;
         justify-content: center;
