@@ -416,9 +416,10 @@ nav {
 
 .projects-certifications-card > p {
     font-family: var(--font-text-regular);
-    font-size: 1.5em;
+    font-size: 1.125em;
     text-align: center;
     color: var(--colorWhite);
+    padding-bottom: 10px;
     background-color: var(--colorSecundary);
 }
 
