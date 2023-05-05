@@ -32,7 +32,7 @@
     --font-text-semi: "Source Sans Pro Semi-Bold", sans-serif;
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     background-color: var(--colorTertiary);
@@ -207,7 +207,6 @@ nav {
     background-color: var(--colorTransaction);
     color: var(--colorPrimary);
     font-family: var(--font-text-semi);
-    font-weight: 600;
 }
 
 .information > h2 {
@@ -249,7 +248,7 @@ nav {
 .grid-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19em, 1fr));
-    gap: 40px;
+    grid-gap: 40px;
     background-color: var(--colorPrimary);
 }
 
@@ -380,54 +379,55 @@ nav {
     }
 }
 
-.projects {
+.projects-certifications {
     margin: 0 auto;
     padding: 40px;
     max-width: 1140px;
     background-color: var(--colorPrimary);
 }
 
-.projects-grid {
+.projects-certifications-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 10px;
     background-color: var(--colorPrimary);
 }
 
-.projects-card {
+.projects-certifications-card {
+    padding: 1px;
     border-radius: 5px;
     background-color: var(--colorSecundary);
 }
 
-.projects-card > img {
-    border-radius: 5px;
+.projects-certifications-card > img {
+    border-radius: 5px 5px 0 0;
     width: 100%;
 }
 
-.projects-card > h2 {
+.projects-certifications-card > h2 {
     font-family: var(--font-text-semi);
     font-size: 1.5em;
-    font-weight: 600;
+    padding: 10px;
+    margin: 0;
     text-align: center;
     color: var(--colorWhite);
     background-color: var(--colorSecundary);
 }
 
-.projects-card > p {
+.projects-certifications-card > p {
     font-family: var(--font-text-regular);
-    font-size: 1.125em;
-    text-align: justify;
-    padding: 10px;
-    color: var(--colorDescription);
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--colorWhite);
     background-color: var(--colorSecundary);
 }
 
 @media (max-width: 480px) {
-    .projects > h2 {
+    .projects-certifications > h2 {
         font-size: 22px;
     }
     
-    .projects-grid {
+    .projects-certifications-grid {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -435,11 +435,11 @@ nav {
         background-color: var(--colorPrimary);
     }
 
-    .projects-card > h2 {
+    .projects-certifications-card > h2 {
         font-size: 16px;
     }
 
-    .projects-card > p {
+    .projects-certifications-card > p {
         font-size: 12px;
     }
 }
