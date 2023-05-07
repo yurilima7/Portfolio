@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script src="JavaScript/script.js"></script>
     <title>Yuri Lima | Dev Mobile</title>
 </head>
 <body>
@@ -18,12 +19,10 @@
                 <p>Yuri Lima</p>
             </div>
             <div class="menu">
-                <a href="#" class="home">Home</a>
-                <a href="#Habilidades">Habilidades</a>
-                <a href="#Projetos">Projetos</a>
-                <a href="#Certificações">Certificações</a>
-                <a href="#Contatos">Contatos</a>
-                <button>Home</button>
+                <a class="scroll-link" href="#Habilidades">Habilidades</a>
+                <a class="scroll-link" href="#Projetos">Projetos</a>
+                <a class="scroll-link" href="#Certificações">Certificações</a>
+                <a class="scroll-link" href="#Contatos">Contatos</a>
             </div>
         </div>
     </nav>
@@ -33,7 +32,7 @@
             <div class="about">    
                 <img src="Images/Perfil.png" alt="Imagem de Perfil">
                 <div class="information">
-                    <h2>SOBRE MIM</h2>
+                    <h1>SOBRE MIM</h1>
                     <p>
                         Olá, me chamo Yuri Lima. Tenho 22 anos e atualmente sou acadêmico de Ciência da Computação no Instituto Federal do Maranhão Campus Caxias, sou desenvolvimento mobile Flutter. Apaixonado por tecnologia, adoro estar sempre atualizado com as últimas tendências do mercado.
                     </p>
@@ -49,8 +48,8 @@
         </section>
 
         <section>
-            <div class="services">
-                <h2>SERVIÇOS</h2>
+            <div class="container">
+                <h1>SERVIÇOS</h1>
                 <div class="grid-cards">
                     <div class="services-card">
                         <img src="Images/Code.png" alt="Code Image">
@@ -73,8 +72,8 @@
         </section>
 
         <section>
-            <div class="skills" id="Habilidades">
-                <h2>HABILIDADES</h2>
+            <div class="container" id="Habilidades">
+                <h1>HABILIDADES</h1>
                 <div class="skills-grid">
                     <div class="skills-card">
                         <p>Dart</p>
@@ -105,8 +104,8 @@
         </section>
 
         <section>
-            <div class="projects-certifications" id="Projetos">
-                <h2>PROJETOS</h2>
+            <div class="container" id="Projetos">
+                <h1>PROJETOS</h1>
                 <div class="projects-certifications-grid">
                     <div class="projects-certifications-card">
                         <img src="Projects/Sales-Manager.png" alt="Sales Manager Image">
@@ -138,8 +137,8 @@
         </section>
 
         <section>
-            <div class="projects-certifications" id="Certificações">
-                <h2>CERTIFICAÇÕES</h2>
+            <div class="container" id="Certificações">
+                <h1>CERTIFICAÇÕES</h1>
                 <div class="projects-certifications-grid">
                     <div class="projects-certifications-card">
                         <img src="Certifications/Dart-Week-9.png" alt="Certificado Dart-Week-9">
@@ -165,9 +164,37 @@
             </div>
         </section>
 
-        <section></section>
+        <section>
+            <div class="container" id="Contatos">
+                <h1>CONTATOS</h1>
+                <div class="contact-section">
+                    <div class="contact-form">
+                        <img src="Images/email.png" alt="Email Icon">
+                        <h2>Email</h2>
+                        <p>yurilima742@outlook.com.br</p>
+                    </div>
+                    <div class="contact-form">
+                        <img src="Images/instagram.png" alt="Email Icon">
+                        <h2>Instagram</h2>
+                        <p>@yurilima.7</p>
+                    </div>
+                    <div class="contact-form">
+                        <img src="Images/github.png" alt="Email Icon">
+                        <h2>GitHub</h2>
+                        <p>@yurilima7</p>
+                    </div>
+                    <div class="contact-form">
+                        <img src="Images/linkedin.png" alt="Email Icon">
+                        <h2>Linkedin</h2>
+                        <p>@yurilima7</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="container">Copyright &copy; todos os direitos reservados | Yuri Lima</div>
+    </footer>
 </body>
 </html>

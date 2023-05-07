@@ -56,7 +56,29 @@ section {
     background-color: var(--colorPrimary);
 }
 
-h2 {
+footer {
+    margin-top: 10px;
+    background-color: var(--colorPrimary);
+}
+
+footer > div {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    font-family: var(--font-text-regular);
+    font-size: 1.2500em;
+    text-align: center;
+    color: var(--colorWhite);
+    background-color: var(--colorPrimary);
+}
+
+@media (max-width: 480px) {
+    footer > div {
+        font-size: 14px;
+    }
+}
+
+h1 {
     color: var(--colorWhite);
     background-color: var(--colorPrimary);
     font-family: var(--font-text-semi);
@@ -65,8 +87,24 @@ h2 {
     margin-bottom: 18px;
 }
 
+h2 {
+    color: var(--colorWhite);
+    background-color: var(--colorSecundary);
+    font-family: var(--font-text-regular);
+    font-size:  1.5em;
+    padding: 10px;
+    text-align: center;
+}
+
 main {
     min-width: 300px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 1140px;
+    background-color: var(--colorPrimary);
 }
 
 /* Nav */
@@ -126,10 +164,6 @@ nav {
     color: var(--colorTransaction);
 }
 
-.home {
-    display: none;
-}
-
 @media (max-width: 768px) {
     .nav-container {
         flex-direction: column;
@@ -149,18 +183,16 @@ nav {
 
     .menu > button {
         display: none;
-    }
-
-    .menu .home {
-        display: inline;
-        color: #8a94ff;
-        pointer-events: none;
-    }    
+    }   
 }
 
 @media (max-width: 480px) {
     .menu > a {
-        font-size: 16px;
+        font-size: 1em;
+    }
+
+    section {
+        margin-top: 0;
     }
 }
 
@@ -209,7 +241,7 @@ nav {
     font-family: var(--font-text-semi);
 }
 
-.information > h2 {
+.information > h1 {
     text-align: center;
 }
 
@@ -232,7 +264,7 @@ nav {
         font-size: 18;
     }
 
-    .information > h2 {
+    .information > h1 {
         font-size: 22px;
     }
 }
@@ -300,7 +332,7 @@ nav {
         font-size: 16px;
     }
 
-    .services > h2 {
+    .container > h1 {
         font-size: 22px;
     }
 }
@@ -348,7 +380,7 @@ nav {
     .skills-grid {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         gap: 2em;
         background-color: var(--colorPrimary);
     }
@@ -374,7 +406,7 @@ nav {
         font-size: 16px;
     }
 
-    .skills > h2 {
+    .container > h1 {
         font-size: 22px;
     }
 }
@@ -404,16 +436,6 @@ nav {
     width: 100%;
 }
 
-.projects-certifications-card > h2 {
-    font-family: var(--font-text-semi);
-    font-size: 1.5em;
-    padding: 10px;
-    margin: 0;
-    text-align: center;
-    color: var(--colorWhite);
-    background-color: var(--colorSecundary);
-}
-
 .projects-certifications-card > p {
     font-family: var(--font-text-regular);
     font-size: 1.125em;
@@ -424,7 +446,7 @@ nav {
 }
 
 @media (max-width: 480px) {
-    .projects-certifications > h2 {
+    .container > h1 {
         font-size: 22px;
     }
     
@@ -442,5 +464,83 @@ nav {
 
     .projects-certifications-card > p {
         font-size: 12px;
+    }
+}
+
+/*CONTACTS*/
+.contact {
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 1140px;
+    background-color: var(--colorPrimary);
+}
+
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--colorPrimary);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 13.5em;
+    height: 13.5em;
+    padding: 10px;
+    background-color: var(--colorPrimary);
+}
+
+.contact-form > h2 {
+    padding: 0;
+    margin: 0;
+    background-color: var(--colorPrimary);
+}
+
+.contact-form > p {
+    font-family: var(--font-text-light);
+    font-size: 1.125em;
+    text-align: center;
+    color: var(--colorWhite);
+    padding-bottom: 10px;
+    background-color: var(--colorPrimary);
+}
+
+.contact-form > img {
+    width: 6.25em;
+    height: 6.25em;
+    background-color: var(--colorPrimary);
+}
+
+@media (max-width: 480px) {
+    .container > h1 {
+        font-size: 22px;
+    }
+
+    .contact-section {
+        justify-content: center;
+        background-color: var(--colorPrimary);
+    }
+
+    .contact-form {
+        width: 7.5em;
+        height: 7.5em;
+        margin: 2px;
+    }
+    
+    .contact-form > h2 {
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    .contact-form > p {
+        font-size: 12px;
+    }
+    
+    .contact-form > img {
+        width: 4.25em;
+        height: 4.25em;
     }
 }
