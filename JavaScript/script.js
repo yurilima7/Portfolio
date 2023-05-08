@@ -20,4 +20,19 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  const textElement = document.getElementById('typing-text');
+  const text = "Olá, sou Yuri Lima";
+  let index = 0;
+
+  function typeEffect() {
+      if (index < text.length) {
+          textElement.textContent += text.charAt(index);
+          index++;
+          setTimeout(typeEffect, 100); // Ajuste o tempo de espera entre cada caractere digitado (em milissegundos)
+      }
+  }
+
+  typeEffect();
+
 });

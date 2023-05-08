@@ -35,7 +35,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    background-color: var(--colorTertiary);
+    background-color: var(--colorPrimary);
     text-decoration: none;
 }
 
@@ -53,12 +53,10 @@ button {
 
 section {
     margin-top: 10px;
-    background-color: var(--colorPrimary);
 }
 
 footer {
     margin-top: 10px;
-    background-color: var(--colorPrimary);
 }
 
 footer > div {
@@ -69,7 +67,6 @@ footer > div {
     font-size: 1.2500em;
     text-align: center;
     color: var(--colorWhite);
-    background-color: var(--colorPrimary);
 }
 
 @media (max-width: 480px) {
@@ -79,21 +76,20 @@ footer > div {
 }
 
 h1 {
-    color: var(--colorWhite);
-    background-color: var(--colorPrimary);
     font-family: var(--font-text-semi);
     font-size: 2em;
     text-align: left;
     margin-bottom: 18px;
+    color: var(--colorWhite);
 }
 
 h2 {
-    color: var(--colorWhite);
-    background-color: var(--colorSecundary);
     font-family: var(--font-text-regular);
     font-size:  1.5em;
     padding: 10px;
     text-align: center;
+    color: var(--colorWhite);
+    background-color: var(--colorSecundary);
 }
 
 main {
@@ -104,13 +100,17 @@ main {
     margin: 0 auto;
     padding: 40px;
     max-width: 1140px;
-    background-color: var(--colorPrimary);
+}
+
+.divider {
+    height: 4px;
+    background-color: var(--colorTertiary);
+    /* margin: 0 20px; */
 }
 
 /* Nav */
 nav {
     max-height: 102px;
-    background-color: var(--colorPrimary);
 }
 
 .nav-container {
@@ -120,18 +120,15 @@ nav {
     margin: 0 auto;
     padding: 10px;
     max-width: 1140px;
-    background-color: var(--colorPrimary);
 }
 
 .logo-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--colorPrimary);
 }
 
 .logo-container > img {
-    background-color: var(--colorPrimary);
     width: 50px;
 }
 
@@ -140,23 +137,20 @@ nav {
     font-family: var(--font-text-semi);
     font-size: 1.2500em;
     color: var(--colorWhite);
-    background-color: var(--colorPrimary);
 }
 
 .menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--colorPrimary);
 }
 
 .menu > a {
-    color: var(--colorWhite);
-    background-color: var(--colorPrimary);  
     margin-right: 33px;
     font-family: var(--font-text-regular);
     font-size: 1.2500em;
     transition-duration: .5s;
+    color: var(--colorWhite);
 }
 
 .menu > a:hover {
@@ -187,12 +181,16 @@ nav {
 }
 
 @media (max-width: 480px) {
-    .menu > a {
+    .logo-container > img {
+        width: 35px;
+    }
+
+    .logo-container > p {
         font-size: 1em;
     }
 
-    section {
-        margin-top: 0;
+    .menu > a {
+        font-size: 0.875em;
     }
 }
 
@@ -205,28 +203,24 @@ nav {
     padding: 40px;
     max-width: 1140px;
     gap: 20px;
-    background-color: var(--colorPrimary);
 }
 
 .about > img {
     width: 250px;
-    background-color: var(--colorPrimary);
 }
 
 .information {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--colorPrimary);
 }
 
 .information > p {
-    color: var(--colorDescription);
-    background-color: var(--colorPrimary);
     font-family: var(--font-text-regular);
     font-size: 1.2500em;
     text-align: justify;
     margin-bottom: 20px;
+    color: var(--colorDescription);
 }
 
 .information > button {
@@ -236,9 +230,9 @@ nav {
 
 .information > button:hover {
     cursor: pointer;
-    background-color: var(--colorTransaction);
-    color: var(--colorPrimary);
     font-family: var(--font-text-semi);
+    color: var(--colorPrimary);
+    background-color: var(--colorTransaction);
 }
 
 .information > h1 {
@@ -270,18 +264,10 @@ nav {
 }
 
 /* services */
-.services {
-    margin: 0 auto;
-    padding: 40px;
-    max-width: 1140px;
-    background-color: var(--colorPrimary);
-}
-
 .grid-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19em, 1fr));
     grid-gap: 40px;
-    background-color: var(--colorPrimary);
 }
 
 .services-card {
@@ -320,7 +306,7 @@ nav {
         flex-direction: column;
         justify-content: space-between;
         gap: 40px;
-        background-color: var(--colorPrimary);
+
     }
 
     .services-card > img {
@@ -338,18 +324,10 @@ nav {
 }
 
 /* skills */
-.skills{
-    margin: 0 auto;
-    padding: 40px;
-    max-width: 1140px;
-    background-color: var(--colorPrimary);
-}
-
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10.625em, 1fr));
     grid-gap: 2em;
-    background-color: var(--colorPrimary);
 }
   
 .skills-card {
@@ -382,7 +360,7 @@ nav {
         flex-wrap: wrap;
         justify-content: center;
         gap: 2em;
-        background-color: var(--colorPrimary);
+
     }
 
     .skills-card {
@@ -415,14 +393,12 @@ nav {
     margin: 0 auto;
     padding: 40px;
     max-width: 1140px;
-    background-color: var(--colorPrimary);
 }
 
 .projects-certifications-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 10px;
-    background-color: var(--colorPrimary);
 }
 
 .projects-certifications-card {
@@ -455,7 +431,7 @@ nav {
         justify-content: center;
         flex-wrap: wrap;
         gap: 2em;
-        background-color: var(--colorPrimary);
+
     }
 
     .projects-certifications-card > h2 {
@@ -468,18 +444,10 @@ nav {
 }
 
 /*CONTACTS*/
-.contact {
-    margin: 0 auto;
-    padding: 40px;
-    max-width: 1140px;
-    background-color: var(--colorPrimary);
-}
-
 .contact-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: var(--colorPrimary);
 }
 
 .contact-form {
@@ -490,7 +458,6 @@ nav {
     width: 13.5em;
     height: 13.5em;
     padding: 10px;
-    background-color: var(--colorPrimary);
 }
 
 .contact-form > h2 {
@@ -503,15 +470,13 @@ nav {
     font-family: var(--font-text-light);
     font-size: 1.125em;
     text-align: center;
-    color: var(--colorWhite);
     padding-bottom: 10px;
-    background-color: var(--colorPrimary);
+    color: var(--colorWhite);
 }
 
 .contact-form > img {
     width: 6.25em;
     height: 6.25em;
-    background-color: var(--colorPrimary);
 }
 
 @media (max-width: 480px) {
@@ -521,7 +486,7 @@ nav {
 
     .contact-section {
         justify-content: center;
-        background-color: var(--colorPrimary);
+
     }
 
     .contact-form {
