@@ -22,7 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const textElement = document.getElementById('typing-text');
-  const text = "Olá, sou Yuri Lima";
+  const subtextElement = document.getElementById('typing-subtext');
+  const text = "Olá, sou o Yuri Lima";
+  const subtext = "Desenvolvedor Mobile";
   let index = 0;
 
   function typeEffect() {
@@ -30,7 +32,18 @@ document.addEventListener('DOMContentLoaded', () => {
           textElement.textContent += text.charAt(index);
           index++;
           setTimeout(typeEffect, 100); // Ajuste o tempo de espera entre cada caractere digitado (em milissegundos)
+      } else {
+        index = 0;
+        typeSubtextEffect();
       }
+  }
+
+  function typeSubtextEffect() {
+    if (index < subtext.length) {
+        subtextElement.textContent += subtext.charAt(index);
+        index++;
+        setTimeout(typeSubtextEffect, 100);
+    }
   }
 
   typeEffect();

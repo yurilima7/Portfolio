@@ -31,11 +31,17 @@
     <main>
         <section>
             <div class="about">    
-                <img src="Images/Perfil.png" alt="Imagem de Perfil">
+                <div class="profile">
+                    <div class="column-info">
+                        <h1><span id="typing-text"></span></h1>
+                        <p><span id="typing-subtext"></span></p>
+                    </div>
+                    <img src="Images/Perfil.png" alt="Imagem de Perfil">
+                </div>
                 <div class="information">
                     <h1>SOBRE MIM</h1>
                     <p>
-                        Olá, me chamo Yuri Lima. Tenho 22 anos e atualmente sou acadêmico de Ciência da Computação no Instituto Federal do Maranhão Campus Caxias, sou desenvolvimento mobile Flutter. Apaixonado por tecnologia, adoro estar sempre atualizado com as últimas tendências do mercado.
+                        Tenho 22 anos e atualmente sou acadêmico de Ciência da Computação no Instituto Federal do Maranhão Campus Caxias, sou desenvolvimento mobile Flutter. Apaixonado por tecnologia, adoro estar sempre atualizado com as últimas tendências do mercado.
                     </p>
                     <p>
                         Como desenvolvedor mobile, tenho experiência em design de interfaces de usuário (UI) e experiência do usuário (UX), bem como em desenvolvimento de aplicativos para Android e iOS utilizando Flutter. Além disso, tenho conhecimento em linguagens de programação como Dart, Java e Python.
@@ -44,7 +50,7 @@
                         Tenho conhecimento em bancos de dados como MySQL, SQLite no contexto mobile e Firebase para integração de dados em tempo real.
                     </p>
                     <p>
-                        Na área de desenvolvimento web, tenho interesse em aprimorar minhas habilidades em linguagens como HTML, CSS e JavaScript, bem como em React e Angular, também sou um entusiasta de empreendedorismo buscando sempre que possível fazer cursos e participar de eventos relacionados.
+                        Na área de desenvolvimento web, tenho interesse em aprimorar minhas habilidades em linguagens como HTML, CSS e JavaScript, bem como em React e Next, também sou um entusiasta de empreendedorismo buscando sempre que possível fazer cursos e participar de eventos relacionados.
                     </p>
                     <button>Baixar CV</button>
                 </div>
@@ -111,31 +117,41 @@
             <div class="container" id="Projetos">
                 <h1>PROJETOS</h1>
                 <div class="projects-certifications-grid">
-                    <div class="projects-certifications-card">
-                        <img src="Projects/Sales-Manager.png" alt="Sales Manager Image">
-                        <h2>Sales Manager</h2>
-                        <p>Aplicação mobile para vendedores realizarem o gerenciamento de suas vendas</p>
-                    </div>
-                    <div class="projects-certifications-card">
-                        <img src="Projects/Acad-Facil.png" alt="Acad-Facil Image">
-                        <h2>Acad Fácil</h2>
-                        <p>Aplicação mobile para o estudante realizar o acompanhamento de suas notas</p>
-                    </div>
-                    <div class="projects-certifications-card">
-                        <img src="Projects/Vakinha.png" alt="Vakinha Image">
-                        <h2>Vakinha Burger</h2>
-                        <p>Aplicação mobile de delivery desenvolvida durante o Dart Week 9 da Academia do Flutter</p>
-                    </div>
-                    <div class="projects-certifications-card">
-                        <img src="Projects/Cine-Guia.png" alt="Cine-Guia Image">
-                        <h2>Cine Guia</h2>
-                        <p>Site guia de filmes que estão em cartaz pelo Brasil durante o fim de semana</p>
-                    </div>
-                    <div class="projects-certifications-card">
-                        <img src="Projects/E-Rent.png" alt="E-Rent Image">
-                        <h2>E-Rent</h2>
-                        <p>Site imobiliário de anuncio e aluguél de imóveis</p>
-                    </div>
+                    <a href="https://github.com/yurilima7/Sales-Manager-2.0" target="_blank">
+                        <div class="projects-certifications-card">
+                            <img src="Projects/Sales-Manager.png" alt="Sales Manager Image">
+                            <h2>Sales Manager</h2>
+                            <p>Aplicação mobile para vendedores realizarem o gerenciamento de suas vendas</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/yurilima7/Acad-Facil" target="_blank">
+                        <div class="projects-certifications-card">
+                            <img src="Projects/Acad-Facil.png" alt="Acad-Facil Image">
+                            <h2>Acad Fácil</h2>
+                            <p>Aplicação mobile para o estudante realizar o acompanhamento de suas notas</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/yurilima7/Delivery-App" target="_blank">
+                        <div class="projects-certifications-card">
+                            <img src="Projects/Vakinha.png" alt="Vakinha Image">
+                            <h2>Vakinha Burger</h2>
+                            <p>Aplicação mobile de delivery desenvolvida durante o Dart Week 9 da Academia do Flutter</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/yurilima7/Cine-Guia" target="_blank">
+                        <div class="projects-certifications-card">
+                            <img src="Projects/Cine-Guia.png" alt="Cine-Guia Image">
+                            <h2>Cine Guia</h2>
+                            <p>Site guia de filmes que estão em cartaz pelo Brasil durante o fim de semana</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/yurilima7/Imobiliario" target="_blank">
+                        <div class="projects-certifications-card">
+                            <img src="Projects/E-Rent.png" alt="E-Rent Image">
+                            <h2>E-Rent</h2>
+                            <p>Site imobiliário de anuncio, aluguél de imóveis e gerenciamento</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -172,26 +188,34 @@
             <div class="container" id="Contatos">
                 <h1>CONTATOS</h1>
                 <div class="contact-section">
-                    <div class="contact-form">
-                        <img src="Images/email.png" alt="Email Icon">
-                        <h2>Email</h2>
-                        <p>yurilima742@outlook.com.br</p>
-                    </div>
-                    <div class="contact-form">
-                        <img src="Images/instagram.png" alt="Email Icon">
-                        <h2>Instagram</h2>
-                        <p>@yurilima.7</p>
-                    </div>
-                    <div class="contact-form">
-                        <img src="Images/github.png" alt="Email Icon">
-                        <h2>GitHub</h2>
-                        <p>@yurilima7</p>
-                    </div>
-                    <div class="contact-form">
-                        <img src="Images/linkedin.png" alt="Email Icon">
-                        <h2>Linkedin</h2>
-                        <p>@yurilima7</p>
-                    </div>
+                    <a href="mailto:yurilima742@outlook.com.br">
+                        <div class="contact-form">
+                            <img src="Images/email.png" alt="Email Icon">
+                            <h2>Email</h2>
+                            <p>yurilima742@outlook.com.br</p>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/yurilima.7/" target="_blank">
+                        <div class="contact-form">
+                            <img src="Images/instagram.png" alt="Email Icon">
+                            <h2>Instagram</h2>
+                            <p>@yurilima.7</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/yurilima7" target="_blank">
+                        <div class="contact-form">
+                            <img src="Images/github.png" alt="Email Icon">
+                            <h2>GitHub</h2>
+                            <p>@yurilima7</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/yuri-lima7/" target="_blank">
+                        <div class="contact-form">
+                            <img src="Images/linkedin.png" alt="Email Icon">
+                            <h2>Linkedin</h2>
+                            <p>@yuri-lima7</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
