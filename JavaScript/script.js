@@ -48,4 +48,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   typeEffect();
 
+  const downloadButton = document.getElementById('download-cv');
+
+  downloadButton.addEventListener('click', () => {
+    const pdfFilePath = 'Docs/Currículo.pdf';
+    const link = document.createElement('a');
+
+    link.href = pdfFilePath;
+    link.download = 'Yuri_Curriculo.pdf';
+    link.target = '_blank'; // Abrir o link em uma nova aba (opcional)
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+
 });
