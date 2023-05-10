@@ -25,7 +25,6 @@
     --colorWhite: #FFFFFF;
     --colorButton: #141A5E;
     --colorTransaction: #afb5fa;
-    --colorDescription: #eeeeeeb6;
 
     --font-text-light: "Source Sans Pro Light", sans-serif;
     --font-text-regular: "Source Sans Pro Regular", sans-serif;
@@ -251,7 +250,7 @@ nav {
     font-size: 1.2500em;
     text-align: justify;
     margin-bottom: 20px;
-    color: var(--colorDescription);
+    color: var(--colorWhite);
 }
 
 .information > button {
