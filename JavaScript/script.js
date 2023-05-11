@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const link = document.createElement('a');
 
     link.href = pdfFilePath;
-    link.download = 'Yuri_Curriculo.pdf';
+    link.download = 'Curriculo.pdf';
     link.target = '_blank'; // Abrir o link em uma nova aba (opcional)
 
     document.body.appendChild(link);
