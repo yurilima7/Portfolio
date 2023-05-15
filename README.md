@@ -10,7 +10,7 @@ Este é o meu portfólio pessoal, onde compartilho informações sobre minha for
 - Design de interfaces de usuário (UI) e experiência do usuário (UX)
 - Linguagens de programação: Dart, Java, Python
 - Bancos de dados: MySQL, SQLite (mobile), Firebase
-- Desenvolvimento web: HTML, CSS, JavaScript, React, Next.js
+- Desenvolvimento web: HTML, CSS
 
 ## Contato
 
