@@ -462,6 +462,7 @@ nav {
     }
     
     .projects-certifications-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 32px;
     }
 
@@ -503,7 +504,7 @@ nav {
 
 .contact-form > p {
     font-family: var(--font-text-light);
-    font-size: 1.125em;
+    font-size: 1em;
     text-align: center;
     padding-bottom: 10px;
     color: var(--colorWhite);
