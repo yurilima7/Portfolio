@@ -376,8 +376,8 @@ nav {
 /* skills */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10.625em, 1fr));
-    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 40px;
 }
   
 .skills-card {
@@ -398,7 +398,7 @@ nav {
 }
 
 .skills-card > img {
-    width: 6.25em;
+    width: 50%;
     background-color: var(--colorSecundary);
 }
 
@@ -412,28 +412,7 @@ nav {
 
 @media (max-width: 480px) {
     .skills-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2em;
-
-    }
-
-    .skills-card {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 5px;
-        height: 95px;
-        width: 95px;
-        padding: 10px;
-        background-color: var(--colorSecundary);
-    }
-
-    .skills-card > img {
-        width: 45px;
-        background-color: var(--colorSecundary);
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 
     .skills-card > p {
@@ -447,7 +426,7 @@ nav {
 
 .projects-certifications-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
 }
 
@@ -483,11 +462,7 @@ nav {
     }
     
     .projects-certifications-grid {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 2em;
-
+        gap: 32px;
     }
 
     .projects-certifications-card > h2 {
@@ -501,9 +476,9 @@ nav {
 
 /*CONTACTS*/
 .contact-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
 }
 
 .contact-form {
@@ -511,8 +486,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 13.5em;
-    height: 13.5em;
     padding: 10px;
     transition: transform 0.3s ease;
 }
@@ -537,24 +510,12 @@ nav {
 }
 
 .contact-form > img {
-    width: 6.25em;
-    height: 6.25em;
+    width: 40%;
 }
 
 @media (max-width: 480px) {
     .container > h1 {
         font-size: 22px;
-    }
-
-    .contact-section {
-        justify-content: center;
-
-    }
-
-    .contact-form {
-        width: 7.5em;
-        height: 7.5em;
-        margin: 2px;
     }
     
     .contact-form > h2 {
@@ -564,10 +525,5 @@ nav {
     
     .contact-form > p {
         font-size: 12px;
-    }
-    
-    .contact-form > img {
-        width: 4.25em;
-        height: 4.25em;
     }
 }
