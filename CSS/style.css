@@ -136,11 +136,11 @@ nav {
 }
 
 .logo-container > img {
-    width: 50px;
+    width: 70px;
 }
 
 .logo-container > p {
-    padding-left: 20px;
+    padding-left: 15px;
     font-family: var(--font-text-semi);
     font-size: 1.2500em;
     color: var(--colorWhite);
@@ -186,7 +186,7 @@ nav {
 
 @media (max-width: 480px) {
     .logo-container > img {
-        width: 35px;
+        width: 50px;
     }
 
     .logo-container > p {
@@ -248,7 +248,8 @@ nav {
 .information > p {
     font-family: var(--font-text-regular);
     font-size: 1.2500em;
-    text-align: justify;
+    text-align: center;
+    line-height: 1.5;
     margin-bottom: 20px;
     color: var(--colorWhite);
 }
