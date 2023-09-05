@@ -75,4 +75,12 @@ document.addEventListener('DOMContentLoaded', () => {
       menu.classList.remove('active');
     }
   });
+
+  const menuLinks = document.querySelectorAll('.menu a');
+
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('active'); // Fecha o menu ao clicar em um link
+    });
+  });
 });
