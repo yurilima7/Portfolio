@@ -101,7 +101,7 @@ main {
 .container {
     margin: 0 auto;
     padding: 40px;
-    max-width: 1140px;
+    max-width: 1200px;
 }
 
 .divider {
@@ -126,7 +126,8 @@ nav {
     margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 10px;
-    max-width: 1140px;
+    max-width: 1200px;
+    min-height: 70px;
 }
 
 .logo-container {
@@ -227,7 +228,7 @@ nav {
     justify-content: space-between;
     margin: 0 auto;
     padding: 102px 40px 40px 40px;
-    max-width: 1140px;
+    max-width: 1200px;
     gap: 20px;
 }
 
