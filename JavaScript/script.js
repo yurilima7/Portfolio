@@ -63,4 +63,16 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.removeChild(link);
   });
 
+  const drawer = document.querySelector('.drawer');
+  const menu = document.querySelector('.menu');
+
+  drawer.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+
+   document.addEventListener('click', (event) => {
+    if (!menu.contains(event.target) && !drawer.contains(event.target)) {
+      menu.classList.remove('active');
+    }
+  });
 });
