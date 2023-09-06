@@ -128,6 +128,9 @@ nav {
     padding-bottom: 10px;
     max-width: 1200px;
     min-height: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+
 }
 
 .logo-container {
@@ -167,10 +170,6 @@ nav {
 }
 
 @media (max-width: 768px) {
-    .nav-container {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
     .menu {
         display: none;
     }
