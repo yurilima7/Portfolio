@@ -38,6 +38,11 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
 /* Global */
 button {
     background-color: var(--colorButton);
