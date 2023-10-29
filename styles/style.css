@@ -95,7 +95,7 @@ footer > div {
 }
 
 .divider {
-    height: 4px;
+    height: 2px;
     background-color: var(--colorTertiary);
 }
 
@@ -491,8 +491,11 @@ main {
         margin-top: 26px;
     }
 
+    footer {
+        height: 60px;
+    }
+
     footer > div {
-        height: 20px;
         font-size: 1em;
     }
 
