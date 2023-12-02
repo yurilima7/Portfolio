@@ -48,20 +48,20 @@ body {
 
 h1 {
     font-family: var(--font-text-semi);
-    font-size: 2em;
+    font-size: 1.5em;
     color: var(--colorWhite);
 }
 
 h2 {
     font-family: var(--font-text-regular);
-    font-size: 1.625em;
+    font-size: 1.375em;
     color: var(--colorWhite);
 }
 
 p {
     font-family: var(--font-text-regular);
     color: var(--colorWhite);
-    font-size: 1.375em;
+    font-size: 1.25em;
 }
 
 a {
@@ -81,7 +81,7 @@ footer {
 
 footer > div {
     font-family: var(--font-text-regular);
-    font-size: 1.2500em;
+    font-size: 1.25em;
     text-align: center;
     padding: 0 16px;
 }
@@ -141,7 +141,7 @@ nav > img {
 
 .menu > li > a {
     margin-right: 16px;
-    font-size: 1.25em;
+    font-size: 1.125em;
     transition-duration: .5s;
 }
 
@@ -190,7 +190,7 @@ main {
 
 .columnInfo > h2 {
     font-family: var(--font-text-semi);
-    font-size: 1.25em;
+    font-size: 1em;
     color: var(--colorTransaction);
 }
 
@@ -246,7 +246,7 @@ main {
 }
 
 .servicesCard > h1 {
-    font-size: 1.5em;
+    font-size: 1.375em;
 }
 
 .servicesCard > img {
@@ -271,7 +271,7 @@ main {
 
 .skill > h1 {
     font-family: var(--font-text-regular);
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .skillCircle {
@@ -327,6 +327,7 @@ main {
 
 .projectCard > p {
     margin-bottom: 6px;
+    font-size: 1em;
 }
 
 .projectCard > .technologies {
@@ -352,10 +353,6 @@ main {
     width: 100px;
     height: 100px;
     margin-right: 30px;
-}
-
-.jobDescription > h1 {
-    font-size: 1.625em;
 }
 
 .jobDescription > h2 {
@@ -458,10 +455,6 @@ main {
 
     .jobDescription > h1 {
         font-size: 1.25em;
-    }
-    
-    .jobDescription > h2 {
-        font-size: 1em;
     }
 }
 
