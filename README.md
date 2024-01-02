@@ -14,7 +14,7 @@ Este é o meu portfólio pessoal, onde compartilho informações sobre minha for
 
 ## Contato
 
-- Email: yurilima742@outlook.com.br
+- Email: yurilima742@gmail.com
 - LinkedIn: [linkedin.com/in/yuri-lima7](https://www.linkedin.com/in/yuri-lima7/)
 - Portifólio: [yurilimadev.netlify.app](https://yurilimadev.netlify.app)
 
