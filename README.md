@@ -8,9 +8,8 @@ Este é o meu portfólio pessoal, onde compartilho informações sobre minha for
 
 - Desenvolvimento mobile com Flutter
 - Design de interfaces de usuário (UI) e experiência do usuário (UX)
-- Linguagens de programação: Dart, Java, Python
+- Linguagens de programação: Dart, Python
 - Bancos de dados: MySQL, SQLite (mobile), Firebase
-- Desenvolvimento web: HTML, CSS
 
 ## Contato
 
