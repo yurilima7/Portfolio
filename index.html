@@ -3,378 +3,362 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Yuri Lima | Desenvolvedor Mobile">
     <!-- HTML Meta Tags -->
-    <title>Yuri Lima | Desenvolvedor Mobile</title>
-    <meta name="description" content="Desenvolvedor mobile Flutter e Dart, com conhecimentos em design de interfaces de usuário (UI) e experiência do usuário (UX). Trabalho na criação de aplicativos, com um forte interesse em design e usabilidade, fortemente comprometido em aprimorar minhas habilidades.">
+    <title>Yuri Lima | Desenvolvedor Mobile, Front-End e UI/UX Designer</title>
+    <meta name="description" content="Desenvolvedor mobile Flutter e Dart, com conhecimentos em design de interfaces de usuário (UI) e experiência do usuário (UX). Trabalho na criação de aplicativos e web sites, com um forte interesse em design e usabilidade.">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://yurilimadev.netlify.app">
     <meta property="og:type" content="Portfolio">
     <meta property="og:title" content="Yuri Lima | Desenvolvedor Mobile">
-    <meta property="og:description" content="Desenvolvedor mobile Flutter e Dart, com conhecimentos em design de interfaces de usuário (UI) e experiência do usuário (UX). Trabalho na criação de aplicativos, com um forte interesse em design e usabilidade, fortemente comprometido em aprimorar minhas habilidades.">
-    <meta property="og:image" content="https://yurilimadev.netlify.app/assets/images/thumbnail.png">
+    <meta property="og:description" content="Desenvolvedor mobile Flutter e Dart, com conhecimentos em design de interfaces de usuário (UI) e experiência do usuário (UX). Trabalho na criação de aplicativos e web sites, com um forte interesse em design e usabilidade.">
+    <meta property="og:image" content="https://yurilimadev.netlify.app/assets/images/Thumbnail-Site.png">
 
-     <!-- Twitter Meta Tags -->
-     <meta name="twitter:card" content="summary_large_image">
-     <meta property="twitter:domain" content="yurilimadev.netlify.app">
-     <meta property="twitter:url" content="https://yurilimadev.netlify.app">
-     <meta name="twitter:title" content="Yuri Lima | Desenvolvedor Mobile">
-     <meta name="twitter:description" content="Desenvolvedor mobile Flutter e Dart, com conhecimentos em design de interfaces de usuário (UI) e experiência do usuário (UX). Trabalho na criação de aplicativos, com um forte interesse em design e usabilidade, fortemente comprometido em aprimorar minhas habilidades.">
-     <meta name="twitter:image" content="https://yurilimadev.netlify.app/assets/images/thumbnail.png">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="yurilimadev.netlify.app">
+    <meta property="twitter:url" content="https://yurilimadev.netlify.app">
+    <meta name="twitter:title" content="Yuri Lima | Desenvolvedor Mobile">
+    <meta name="twitter:description" content="Desenvolvedor mobile Flutter e Dart, com conhecimentos em design de interfaces de usuário (UI) e experiência do usuário (UX). Trabalho na criação de aplicativos e web sites, com um forte interesse em design e usabilidade">
+    <meta name="twitter:image" content="https://yurilimadev.netlify.app/assets/images/Thumbnail-Site.png">
 
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
-    <script src="js/script.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/projects.css">
 </head>
 <body>
     <header>
         <nav>
-            <img src="assets/images/logo.png" alt="Logo Site" >
+            <img class="logo" src="assets/logos/Logo.png" alt="Logo do site">
 
-            <ul class="menu">
-                <li>
-                    <a href="#about">Sobre</a>
-                    <a href="#skills">Habilidades</a>
-                    <a href="#projects">Projetos</a>
-                    <a href="#xp">Experiência</a>
-                    <a href="#contacts">Contatos</a>
-                </li>
-            </ul>
+            <div class="nav_links">
+                <a class="link" href="#about">Sobre</a>
+                <a class="link" href="#skills">Habilidades</a>
+                <a class="link" href="#projects">Projetos</a>
+                <a class="link" href="#contacts">Contatos</a>
+            </div>
 
             <div class="drawer">
-                <img src="assets/icons/menu.png" alt="Menu Drawer">
+                <img src="assets/images/Menu.png" alt="Menu Drawer">
             </div>
         </nav>
-        <div class="divider"></div>
     </header>
 
     <main>
-        <section>
-            <div class="profile">
-                <div class="columnInfo">
-                    <h1><span id="typing-text"></span></h1>
-                    <h2><span id="typing-subtext"></span></h2>
-                    <button id="download-cv">Baixar CV</button>
-                </div>
+        <section class="dev_section">
+            <div class="dev_info">
+                <h1 id="title" class="title"></h1>
+                <h4 id="subtitle" class="subtitle"></h4>
 
-                <img src="/assets/images/profile.png" alt="Imagem de perfil">
+                <div class="socials">
+                    <button id="download_cv" class="cv_button">Baixar CV</button>
+                    <a class="social_button" href="https://www.linkedin.com/in/yuri-lima7/" target="_blank">Linkedin</a>
+                </div>
             </div>
 
-            <div class="information">
-                <div class="about" id="about">
-                    <h1>SOBRE MIM</h1>
-                    <p>
-                        Desenvolvedor mobile Flutter e Dart, Academico de Ciência da Computação no Instituto Federal do Maranhão - Campus Caxias. Tenho habilidades com design de interfaces (UI/UX), Python no desenvolvimento de API's com FastApi e trabalhando com bancos de dados como MySQL e Firebase. Além disso tenho conhecimentos em HTML e CSS, e estou buscando aprimorar ainda mais minhas habilidades.
+            <div class="profile">
+                <img class="profile_image" src="assets/images/Profile-Image.png" alt="Foto de perfil do Yuri Lima">
+            </div>
+        </section>
+
+        <section id="about" class="about_section">
+            <div class="about_container">
+                <div class="about">
+                    <h2 class="title_secundary">Sobre mim</h2>
+                    <p class="paragraph">
+                        Desenvolvedor mobile Flutter e Dart, front-end, ciêntista da computação e cofundador da startup <a href="https://www.instagram.com/flateasy.oficial/" target="_blank"><strong class="founder">Flat Easy</strong></a>. Tenho habilidades com design de interfaces (UI/UX), Python no desenvolvimento de API's com FastApi e trabalhando com bancos de dados como Postgres e Firebase. Além disso tenho conhecimentos em HTML e CSS, e estou buscando aprimorar ainda mais minhas habilidades.
                     </p>
                 </div>
+    
+                <div class="dev_system_container">
+                    <img class="dev_system" src="assets/images/Mobile.png" alt="Imagem representativa do desenvolvimento de sistemas">
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skill_section">
+            <div class="skill_container">
+                <h2 class="title_tertiary">Habilidades</h2>
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div>
+                                <img class="skill_image" src="assets/logos/Skill-Dart.png" alt="Logo da linguagem Dart">
+                                <h3 class="skill_title">Dart</h3>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div>
+                                <img class="skill_image" src="assets/logos/Skill-Flutter.png" alt="Logo do framework Flutter para desenvolvimento de Aplicativos">
+                                <h3 class="skill_title">Flutter</h3>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div>
+                                <img class="skill_image" src="assets/logos/Skill-Firebase.png" alt="Logo do serviço de bancos de dados Firebase">
+                                <h3 class="skill_title">Firebase</h3>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div>
+                                <img class="skill_image" src="assets/logos/Skill-Figma.png" alt="Logo do software de design Figma">
+                                <h3 class="skill_title">Figma</h3>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div>
+                                <img class="skill_image" src="assets/logos/Skill-HTML.png" alt="Logo da linguagem de marcação HTML5">
+                                <h3 class="skill_title">HTML5</h3>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div>
+                                <img class="skill_image" src="assets/logos/Skill-CSS.png" alt="Logo da linguagem de estilização CSS3">
+                                <h3 class="skill_title">CSS3</h3>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div>
+                                <img class="skill_image" src="assets/logos/Skill-JS.png" alt="Logo da linguagem Javascript">
+                                <h3 class="skill_title">Javascript</h3>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div>
+                                <img class="skill_image" src="assets/logos/Skill-TS.png" alt="Logo da linguagem Typescript">
+                                <h3 class="skill_title">Typescript</h3>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div>
+                                <img class="skill_image" src="assets/logos/Skill-NextJS.png" alt="Logo do framework de desenvolvimento Web NextJS">
+                                <h3 class="skill_title">NextJS</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services_section">
+            <div class="services_container">
+                <h2 class="title_tertiary">Serviços</h2>
 
                 <div class="services">
-                    <div class="servicesCard">
-                        <img src="assets/icons/mobile.png" alt="mobile icon">
-                        <h1>Desenvolvimento de Aplicativos</h1>
+                    <div class="card_services">
+                        <img class="service_image" src="assets/images/Service-App.png" alt="Imagem representativa da criação de Aplicativos móveis">
+                        <div>
+                            <h3 class="title_card">Aplicativos</h3>
+                            <h4 class="subtitle_card">Multiplataformas Android e IOS</h4>
+                        </div>
                     </div>
 
-                    <div class="servicesCard">
-                        <img src="assets/icons/uxui.png" alt="ui icon">
-                        <h1>Desenvolvimento de Ui Design</h1>
+                    <div class="card_services">
+                        <img class="service_image" src="assets/images/Service-Web.png" alt="Imagem representativa da criação de web sites">
+                        <div>
+                            <h3 class="title_card">Web Sites</h3>
+                            <h4 class="subtitle_card">Sistemas web com HTML, CSS, JS/TS e NextJS</h4>
+                        </div>
+                    </div>
+    
+                    <div class="card_services">
+                        <img class="service_image" src="assets/images/Service-UI.png" alt="Imagem representativa da Prototipagem de aplicações">
+                        <div>
+                            <h3 class="title_card">UI/UX</h3>
+                            <h4 class="subtitle_card">Prototipagem de interfaces para apps</h4>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="skills">
-            <div class="container">
-                <h1>HABILIDADES</h1>
+        <section id="projects" class="projects_section">
+            <div class="projects_container">
+                <h2 class="title_tertiary">Projetos</h2>
 
-                <div class="skills">
-
-                    <div class="skill">
-                        <div class="skillCircle">
-                            <img src="assets/images/dart.png" alt="Dart Logo">
-                        </div>
-                        <h1>Dart</h1>
-                    </div>
-
-                    <div class="skill">
-                        <div class="skillCircle">
-                            <img src="assets/images/flutter.png" alt="Flutter Logo">
-                        </div>
-                        <h1>Flutter</h1>
-                    </div>
-
-                    <div class="skill">
-                        <div class="skillCircle">
-                            <img src="assets/images/firebase.png" alt="Firebase Logo">
-                        </div>
-                        <h1>Firebase</h1>
-                    </div>
-
-                    <div class="skill">
-                        <div class="skillCircle">
-                            <img src="assets/images/figma.png" alt="Figma Logo">
-                        </div>
-                        <h1>Figma</h1>
-                    </div>
-
-                    <div class="skill">
-                        <div class="skillCircle">
-                            <img src="assets/images/python.png" alt="Python Logo">
-                        </div>
-                        <h1>Python</h1>
-                    </div>
-
-                    <div class="skill">
-                        <div class="skillCircle">
-                            <img src="assets/images/fastapi.png" alt="FastApi Logo">
-                        </div>
-                        <h1>FastApi</h1>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <div class="container">
-                <h1>PROJETOS</h1>
-                <div class="mobile">
-                    <h2>Aplicativos Desenvolvidos</h2>
-
-                    <div class="projectsGrid">
+                <h3 class="title_tech">Mobile</h3>
+                <div class="slide_show">
+                    <div class="card_project fade">
                         <a href="https://github.com/yurilima7/Busca-Cep" target="_blank">
-                            <div class="projectCard">
-                                <img src="assets/projects/Busca-Cep.png" alt="Busca Cep Image">
-                                <h2>Busca Cep</h2>
-                                <p>Aplicativo para a busca de informações de locais através do CEP e a busca de CEPs pelo endereço</p>
-                                <div class="technologies">
-                                    <img src="assets/images/dart.png" alt="Dart Logo">
-                                    <img src="assets/images/flutter.png" alt="Flutter Logo">
-                                </div>
+                            <div class="image_container">
+                                <img class="project_image" src="assets/projects/mobile/Busca-CEP.png" alt="Imagem representativa do aplicativo Busca Cep">
+                                <h3 class="title_card">Busca Cep</h3>
+                                <h4 class="subtitle_card">Aplicativo para a busca de informações de locais através do CEP e a busca de CEPs pelo endereço</h4>
                             </div>
                         </a>
+                    </div>
 
-                        <div class="projectCard">
-                            <img src="assets/projects/Spectrum-Scan.png" alt="Spectrum Scan Image">
-                            <h2>Spectrum Scan</h2>
-                            <p>Aplicativo de suporte ao professor da educação infantil na triagem de sinais precoces do Transtorno do Espectro Autista, desenvolvido como projeto de TCC</p>
-                            <div class="technologies">
-                                <img src="assets/images/dart.png" alt="Dart Logo">
-                                <img src="assets/images/flutter.png" alt="Flutter Logo">
-                                <img src="assets/images/firebase.png" alt="Firebase Logo">
-                            </div>
+                    <div class="card_project fade">
+                        <div class="image_container">
+                            <img class="project_image" src="assets/projects/mobile/Ticket-IF.png" alt="Imagem representativa do aplicativo TicketIF">
+                            <h3 class="title_card">Ticket IF</h3>
+                            <h4 class="subtitle_card">Aplicação desenvolvida no estágio para solicitar refeições no Instituto Federal do Maranhão</h4>
                         </div>
-
-                        <div class="projectCard">
-                            <img src="assets/projects/TicketIF.png" alt="TicketIF Image">
-                            <h2>TicketIF</h2>
-                            <p>Aplicação para solicitar refeições no Instituto Federal do Maranhão desenvolvida como estágio</p>
-                            <div class="technologies">
-                                <img src="assets/images/dart.png" alt="Dart Logo">
-                                <img src="assets/images/flutter.png" alt="Flutter Logo">
-                                <img src="assets/images/python.png" alt="Python Logo">
-                                <img src="assets/images/fastapi.png" alt="FastApi Logo">
-                            </div>
+                    </div>
+                    
+                    <div class="card_project fade">
+                        <div class="image_container">
+                            <img class="project_image" src="assets/projects/mobile/Spectrum-Scan.png" alt="Imagem representativa do aplicativo Spectrum Scan">
+                            <h3 class="title_card">Spectrum Scan</h3>
+                            <h4 class="subtitle_card">Aplicativo de suporte ao professor da educação infantil na triagem de sinais precoces do Transtorno do Espectro Autista, projeto de TCC</h4>
                         </div>
-                        
+                    </div>
+                    
+                    <div class="card_project fade">
                         <a href="https://github.com/yurilima7/Zodiac-Identifier" target="_blank">
-                            <div class="projectCard">
-                                <img src="assets/projects/Zodiac-Identifier.png" alt="Zodiac Identifier Image">
-                                <h2>Zodiac Identifier</h2>
-                                <p>Aplicação mobile para identificar as 12 constelações do zodíaco em imagens</p>
-                                <div class="technologies">
-                                    <img src="assets/images/dart.png" alt="Dart Logo">
-                                    <img src="assets/images/flutter.png" alt="Flutter Logo">
-                                    <img src="assets/images/python.png" alt="Python Logo">
-                                    <img src="assets/images/fastapi.png" alt="FastApi Logo">
-                                </div>
+                            <div class="image_container">
+                                <img class="project_image" src="assets/projects/mobile/Zodiac-Identifier.png" alt="Imagem representativa do aplicativo Zodiac Identifier">
+                                <h3 class="title_card">Zodiac Identifier</h3>
+                                <h4 class="subtitle_card">Aplicação mobile para identificar as 12 constelações do zodíaco em imagens</h4>
                             </div>
                         </a>
-
+                    </div>
+                    
+                    <div class="card_project fade">
                         <a href="https://github.com/yurilima7/Sales-Manager-2.0" target="_blank">
-                            <div class="projectCard">
-                                <img src="assets/projects/Sales-Manager.png" alt="Sales Manager Image">
-                                <h2>Sales Manager</h2>
-                                <p>Aplicação mobile para vendedores realizarem o gerenciamento de suas vendas</p>
-                                <div class="technologies">
-                                    <img src="assets/images/dart.png" alt="Dart Logo">
-                                    <img src="assets/images/flutter.png" alt="Flutter Logo">
-                                </div>
+                            <div class="image_container">
+                                <img class="project_image" src="assets/projects/mobile/Sales-Manager.png" alt="Imagem representativa do aplicativo Sales Manager">
+                                <h3 class="title_card">Sales Manager</h3>
+                                <h4 class="subtitle_card">Aplicação mobile para vendedores realizarem o gerenciamento de suas vendas</h4>
                             </div>
                         </a>
-                        
-                        <a href="https://github.com/yurilima7/Somador-de-Compras" target="_blank">
-                            <div class="projectCard">
-                                <img src="assets/projects/Somador-Compras.png" alt="Somador Image">
-                                <h2>Somador de Compras</h2>
-                                <p>Aplicação mobile para cálculo rápido de produtos no supermercado</p>
-                                <div class="technologies">
-                                    <img src="assets/images/dart.png" alt="Dart Logo">
-                                    <img src="assets/images/flutter.png" alt="Flutter Logo">
-                                </div>
-                            </div>
-                        </a>
-                        
+                    </div>
+
+                    <div class="card_project fade">
                         <a href="https://github.com/yurilima7/Acad-Facil" target="_blank">
-                            <div class="projectCard">
-                                <img src="assets/projects/Acad-Facil.png" alt="Acad-Facil Image">
-                                <h2>Acad Fácil</h2>
-                                <p>Aplicação mobile para o estudante realizar o acompanhamento de suas notas</p>
-                                <div class="technologies">
-                                    <img src="assets/images/dart.png" alt="Dart Logo">
-                                    <img src="assets/images/flutter.png" alt="Flutter Logo">
-                                    <img src="assets/images/firebase.png" alt="Firebase Logo">
-                                </div>
+                            <div class="image_container">
+                                <img class="project_image" src="assets/projects/mobile/Acad-Facil.png" alt="Imagem representativa do aplicativo Acad Fácil">
+                                <h3 class="title_card">Acad Fácil</h3>
+                                <h4 class="subtitle_card">Aplicação mobile para o estudante realizar o acompanhamento de suas notas</h4>
                             </div>
                         </a>
                     </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">
+                        <img class="arrow" src="assets/images/Arrow.png" alt="">
+                    </a>
+
+                    <a class="next" onclick="plusSlides(1)">
+                        <img class="arrow" src="assets/images/Arrow-Next.png" alt="">
+                    </a>
                 </div>
-            </div>
-        </section>
 
-        <section id="xp">
-            <div class="container">
-                <h1>EXPERIÊNCIA PROFISSIONAL</h1>
-
-                <div>
-                    <div class="xpEducation">
-                        <div class="xpEducationContainer">
-                            <img src="assets/icons/work.png" alt="Work Icon">
-                            
-                            <div class="jobDescription">
-                                <h1>Estágio Mobile Full Stack</h1>
-                                <h2>IFMA - Campus Caxias: Abr 2023 - Nov 2023</h2>
-
-                                <div class="technologies">
-                                    <img src="assets/images/dart.png" alt="Dart Logo">
-                                    <img src="assets/images/flutter.png" alt="Flutter Logo">
-                                    <img src="assets/images/python.png" alt="Python Logo">
-                                    <img src="assets/images/fastapi.png" alt="FastApi Logo">
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="divider"></div>
+                <div class="dot_container">
+                    <div class="dots">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
                     </div>
                 </div>
-            </div>
 
-            <div class="container">
-                <h1>EDUCAÇÃO</h1>
-
-                <div>
-                    <div class="xpEducation">
-                        <div class="xpEducationContainer">
-                            <img src="assets/icons/education.png" alt="Education Icon">
-                            
-                            <div class="jobDescription">
-                                <h1>Bacharelado em Ciência da Computação</h1>
-                                <h2>IFMA - Caxias: Fev 2019 - 2023</h2>
+                <h3 class="title_tech">Web</h3>
+                <div class="slide_show_web">
+                    <div class="card_web_project fade">
+                        <a href="https://portfolio-desafio-trilhas.netlify.app" target="_blank">
+                            <div class="image_container">
+                                <img class="project_image" src="assets/projects/web/Portfolio-Inova-Trilhas.png" alt="Imagem representativa do site front-end Portfolio Inova Trilhas">
+                                <h3 class="title_card">Portfolio Inova Trilhas</h3>
+                                <h4 class="subtitle_card">Front de um site portfolio para dev do desafio III do programa Inova Trilhas</h4>
                             </div>
-                        </div>
-
-                        <div class="divider"></div>
+                        </a>
                     </div>
-                    
-                    <div class="xpEducation">
-                        <div class="xpEducationContainer">
-                            <img src="assets/icons/education.png" alt="Education Icon">
-                            
-                            <div class="jobDescription">
-                                <h1>Academia do Flutter</h1>
-                                <h2>Jan 2023 - Atualmente</h2>
 
-                                <div class="technologies">
-                                    <img src="assets/images/dart.png" alt="Dart Logo">
-                                    <img src="assets/images/flutter.png" alt="Flutter Logo">
-                                </div>
+                    <div class="card_web_project fade">
+                        <a href="https://sistemainovatrilhas.netlify.app" target="_blank">
+                            <div class="image_container">
+                                <img class="project_image" src="assets/projects/web/Inova-Trilhas.png" alt="Imagem representativa do site front-end Sistema Inova Trilhas">
+                                <h3 class="title_card">Sistema Trilhas</h3>
+                                <h4 class="subtitle_card">Front de um sistema web para cadastrar um usuário no programa Inova Trilhas, desafio II do referido programa</h4>
                             </div>
-                        </div>
-
-                        <div class="divider"></div>
+                        </a>
                     </div>
-                    
-                    <div class="xpEducation">
-                        <div class="xpEducationContainer">
-                            <img src="assets/icons/education.png" alt="Education Icon">
-                            
-                            <div class="jobDescription">
-                                <h1>Certificado Profissional Google UX Design (PT)</h1>
-                                <h2>Coursera: Jul 2023 - Atualmente</h2>
 
-                                <div class="technologies">
-                                    <img src="assets/images/UiUx.png" alt="ui icon">
-                                </div>
+                    <div class="card_web_project fade">
+                        <a href="https://cineguia.netlify.app" target="_blank">
+                            <div class="image_container">
+                                <img class="project_image" src="assets/projects/web/Cine-Guia.png" alt="Imagem representativa do site Cine Guia">
+                                <h3 class="title_card">Cine Guia</h3>
+                                <h4 class="subtitle_card">Front de um sistema web para encontrar filmes em cartaz e futuros lançamentos</h4>
                             </div>
-                        </div>
-
-                        <div class="divider"></div>
+                        </a>
                     </div>
-                    
-                    <div class="xpEducation">
-                        <div class="xpEducationContainer">
-                            <img src="assets/icons/education.png" alt="Education Icon">
-                            
-                            <div class="jobDescription">
-                                <h1>Versionamento de Código com Git e GitHub</h1>
-                                <h2>DIO: Jan 2024</h2>
 
-                                <div class="technologies">
-                                    <img src="assets/images/git.png" alt="git icon">
-                                    <img src="assets/logos/github.png" alt="GitHub Icon">
-                                </div>
-                            </div>
-                        </div>
+                    <a class="prev_web" onclick="plusSlidesWeb(-1)">
+                        <img class="arrow" src="assets/images/Arrow.png" alt="">
+                    </a>
 
-                        <div class="divider"></div>
+                    <a class="next_web" onclick="plusSlidesWeb(1)">
+                        <img class="arrow" src="assets/images/Arrow-Next.png" alt="">
+                    </a>
+                </div>
+
+                <div class="dot_container">
+                    <div class="dots">
+                        <span class="dot_web" onclick="currentSlideWeb(1)"></span>
+                        <span class="dot_web" onclick="currentSlideWeb(2)"></span>
+                        <span class="dot_web" onclick="currentSlideWeb(3)"></span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contacts">
-            <div class="container">
-                <h1>CONTATOS</h1>
+        <section id="contacts" class="contacts_section">
+            <h2 class="title_contacts">Contatos</h2>
 
-                <div class="contactGrid">
-                    <a href="mailto:yurilima742@gmail.com">
-                        <div class="contactForm">
-                            <img src="assets/logos/email.png" alt="Email Icon">
-                            <h2>Email</h2>
-                            <p>yurilimadev7@gmail.com</p>
-                        </div>
-                    </a>
+            <div class="contacts">
+                <a href="mailto:yurilima742@gmail.com">
+                    <div class="contact_form">
+                        <img src="assets/images/Email.png" alt="Icone representativo de Email">
+                        <h3 class="title_contact_form">Email</h3>
+                        <h4 class="subtitle_contact_form">yurilimadev7@gmail.com</h4>
+                    </div>
+                </a>
 
-                    <a href="https://www.instagram.com/yurilima.7/" target="_blank">
-                        <div class="contactForm">
-                            <img src="assets/logos/instagram.png" alt="Instagram Icon">
-                            <h2>Instagram</h2>
-                            <p>@yurilima.7</p>
-                        </div>
-                    </a>
+                <a href="https://www.instagram.com/yurilima.7/" target="_blank">
+                    <div class="contact_form">
+                        <img src="assets/images/Instagram.png" alt="Icone representativo do Instagram">
+                        <h3 class="title_contact_form">Instagram</h3>
+                        <h4 class="subtitle_contact_form">@yurilima.7</h4>
+                    </div>
+                </a>
 
-                    <a href="https://github.com/yurilima7" target="_blank">
-                        <div class="contactForm">
-                            <img src="assets/logos/github.png" alt="GitHub Icon">
-                            <h2>GitHub</h2>
-                            <p>@yurilima7</p>
-                        </div>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/yuri-lima7/" target="_blank">
-                        <div class="contactForm">
-                            <img src="assets/logos/linkedin.png" alt="Linkedin Icon">
-                            <h2>Linkedin</h2>
-                            <p>@yuri-lima7</p>
-                        </div>
-                    </a>
-                </div>
+                <a href="https://github.com/yurilima7" target="_blank">
+                    <div class="contact_form">
+                        <img src="assets/images/Github.png" alt="Icone representativo do GitHub">
+                        <h3 class="title_contact_form">GitHub</h3>
+                        <h4 class="subtitle_contact_form">@yurilima7</h4>
+                    </div>
+                </a>
             </div>
         </section>
     </main>
 
-    <div class="divider"></div>
     <footer>
-        <div>Copyright &copy; 2023 - 2024 - todos os direitos reservados | Yuri Lima</div>
+        <img class="logo" src="assets/logos/Logo.png" alt="Logo Yuri Lima">
+        <h2 class="footer_title">Copyright &copy; 2023 - 2024 | todos os direitos reservados | Yuri Lima</h2>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/slide_web.js"></script>
 </body>
 </html>
