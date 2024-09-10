@@ -115,7 +115,7 @@ main {
     justify-content: center;
     max-width: 1440px;
     padding: 0px 10%;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .dev_info {
@@ -261,7 +261,7 @@ main {
     max-width: 1440px;
     margin: 0 auto;
     padding: 10%;
-    gap: 16px;
+    gap: 32px;
     border-bottom: 2px dashed var(--secundary-color);
 }
 
@@ -280,8 +280,8 @@ main {
 
 .swiper-pagination-bullet {
     background-color: var(--primary-color);
-    height: 12px;
-    width: 12px;
+    height: 8px;
+    width: 8px;
 }
   
 .swiper-pagination-bullet-active {
@@ -303,7 +303,7 @@ main {
 
 .services {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
 }
 
@@ -437,9 +437,11 @@ footer {
     }
 
     .dev_section {
+        height: 500px;
         flex-direction: column-reverse;
         justify-content: center;
         gap: 40px;
+        margin-top: 79.1px;
     }
 
     .subtitle {
@@ -479,6 +481,10 @@ footer {
 
     .services {
         flex-direction: column;
+        gap: 16px;
+    }
+
+    .skill_container {
         gap: 16px;
     }
 

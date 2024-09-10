@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const titleElement = document.getElementById('title');
     const subtitleElement = document.getElementById('subtitle');
     const text = "Olá, sou Yuri Lima";
-    const subtitle = "Desenvolvedor Mobile, Front-End e UI/UX Designer";
+    const subtitle = "Desenvolvedor Mobile e UI/UX Designer";
     let indexText = 0;
 
     function typeEffect() {
