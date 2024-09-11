@@ -115,7 +115,7 @@ main {
     display: flex;
     justify-content: center;
     max-width: 1440px;
-    padding: 5% 10%;
+    padding: 8% 10%;
 }
 
 .dev_info {
