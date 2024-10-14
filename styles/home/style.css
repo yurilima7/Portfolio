@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Exo Semibold';
+    src: url(../../assets/fonts/Exo-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+}
+  
+@font-face {
+    font-family: 'Exo Medium';
+    src: url(../../assets/fonts/Exo-Medium.ttf) format('truetype');
+    font-weight: 500;
+}
+  
+@font-face {
+    font-family: 'Exo Regular';
+    src: url(../../assets/fonts/Exo-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+  
+@font-face {
+    font-family: 'Exo Light';
+    src: url(../../assets/fonts/Exo-Light.ttf) format('truetype');
+    font-weight: 300;
+}
+
+:root {
+    --primary-color: #111540;
+    --secundary-color: #363B73;
+    --white-color: #FFFFFF;
+    --text-color: #2D2D2D;
+    --purple: #6F74A6;
+    --purple-light: #BDBFD9;
+
+    --primary-color-025: rgb(17, 21, 64, 0.25);
+
+    --font-exo-light: "Exo Light", sans-serif;
+    --font-exo-regular: "Exo Regular", sans-serif;
+    --font-exo-medium: "Exo Medium", sans-serif;
+    --font-exo-semibold: "Exo Semibold", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10%;
+}
+
+body {
+    background-color: var(--white-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-bottom: 2px solid var(--white-color);
+    z-index: 999;
+}
+
+nav {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    height: 80px;
+    transition: 0.3s ease;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav_links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav_links.active {
+    background-color: var(--primary-color);
+}
+
+.link {
+    font-family: var(--font-exo-regular);
+    font-size: 1rem;
+    color: var(--white-color);
+    transition-duration: .5s;
+}
+
+.link:hover {
+    text-decoration: underline var(--white-color) 2px;
+    text-underline-offset: 8px;
+}
+
+.drawer {
+    display: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+main {
+    background-color: var(--primary-color);
+    margin-top: 80px;
+}
+
+.projects_section,
+.services_section,
+.skill_section,
+.about_section {
+    background-color: var(--white-color);
+}
+
+.title_secundary {
+    font-family: var(--font-exo-semibold);
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+
+.dev_system {
+    width: 200px;
+    height: 191px;
+}
+
+.title_tertiary {
+    font-family: var(--font-exo-semibold);
+    font-size: 1.25rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-wrapper {
+    margin-bottom: 50px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: space-around;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--primary-color);
+    height: 8px;
+    width: 8px;
+}
+  
+.swiper-pagination-bullet-active {
+    background-color: var(--purple);
+}
+
+.title_card {
+    font-family: var(--font-exo-medium);
+    font-size: 1.25rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.subtitle_card {
+    font-family: var(--font-exo-regular);
+    font-size: 1rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    border-top: 2px solid var(--white-color);
+}
+
+.logo {
+    width: 100px;
+}
+
+.footer_title {
+    font-family: var(--font-exo-regular);
+    font-size: 1rem;
+    text-align: center;
+    color: var(--white-color);
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav_links {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav_links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 9.375em;
+        padding: 32px 16px;
+    }
+
+    .nav_links.active {
+        display: flex;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .drawer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .drawer > img {
+        height: 24px;
+        width: 32px;
+    }
+
+    .footer_title {
+        font-size: 0.75rem;
+    }
+}

@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- HTML Meta Tags -->
     <title>Yuri Lima | Desenvolvedor Mobile</title>
-    <meta name="description" content="Desenvolvedor mobile Flutter e Dart, com conhecimentos em design de interfaces de usuário (UI) e experiência do usuário (UX). Trabalho na criação de aplicativos e web sites, com um forte interesse em design e usabilidade.">
+    <meta name="description" content="Desenvolvedor mobile Flutter e Dart, com conhecimentos em design de interfaces de usuário (UI) e experiência do usuário (UX). Trabalho na criação de aplicativos, com um forte interesse em design e usabilidade.">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://yurilimadev.netlify.app">
     <meta property="og:type" content="Portfolio">
     <meta property="og:title" content="Yuri Lima | Desenvolvedor Mobile">
-    <meta property="og:description" content="Desenvolvedor mobile Flutter e Dart, com conhecimentos em design de interfaces de usuário (UI) e experiência do usuário (UX). Trabalho na criação de aplicativos e web sites, com um forte interesse em design e usabilidade.">
+    <meta property="og:description" content="Desenvolvedor mobile Flutter e Dart, com conhecimentos em design de interfaces de usuário (UI) e experiência do usuário (UX). Trabalho na criação de aplicativos, com um forte interesse em design e usabilidade.">
     <meta property="og:image" content="https://yurilimadev.netlify.app/assets/images/Thumbnail-Site.png">
 
     <!-- Twitter Meta Tags -->
@@ -19,7 +19,7 @@
     <meta property="twitter:domain" content="yurilimadev.netlify.app">
     <meta property="twitter:url" content="https://yurilimadev.netlify.app">
     <meta name="twitter:title" content="Yuri Lima | Desenvolvedor Mobile">
-    <meta name="twitter:description" content="Desenvolvedor mobile Flutter e Dart, com conhecimentos em design de interfaces de usuário (UI) e experiência do usuário (UX). Trabalho na criação de aplicativos e web sites, com um forte interesse em design e usabilidade">
+    <meta name="twitter:description" content="Desenvolvedor mobile Flutter e Dart, com conhecimentos em design de interfaces de usuário (UI) e experiência do usuário (UX). Trabalho na criação de aplicativos, com um forte interesse em design e usabilidade">
     <meta name="twitter:image" content="https://yurilimadev.netlify.app/assets/images/Thumbnail-Site.png">
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -27,8 +27,13 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/projects.css">
+    <link rel="stylesheet" href="./styles/home/style.css">
+    <link rel="stylesheet" href="./styles/home/projects.css">
+    <link rel="stylesheet" href="./styles/home/services.css">
+    <link rel="stylesheet" href="./styles/home/skills.css">
+    <link rel="stylesheet" href="./styles/home/about.css">
+    <link rel="stylesheet" href="./styles/home/dev_section.css">
+    <link rel="stylesheet" href="./styles/home/contacts.css">
 </head>
 <body>
     <header>
@@ -53,8 +58,10 @@
     <main>
         <section id="start" class="dev_section">
             <div class="dev_info">
-                <h1 id="title" class="title"></h1>
-                <h4 id="subtitle" class="subtitle"></h4>
+                <h1 class="title_container">
+                    <span id="title" class="title"></span>
+                    <span id="subtitle" class="subtitle"></span>
+                </h1>
 
                 <div class="socials">
                     <button id="download_cv" class="cv_button">Baixar CV</button>
@@ -143,13 +150,6 @@
                                 <h3 class="skill_title">Typescript</h3>
                             </div>
                         </div>
-
-                        <div class="swiper-slide">
-                            <div>
-                                <img class="skill_image" src="assets/logos/Skill-NextJS.png" alt="Logo do framework de desenvolvimento Web NextJS">
-                                <h3 class="skill_title">NextJS</h3>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="swiper-pagination"></div>
@@ -169,12 +169,12 @@
                             <h4 class="subtitle_card">Multiplataformas Android e IOS</h4>
                         </div>
                     </div>
-                    
+
                     <div class="card_services">
                         <img class="service_image" src="assets/images/Service-Web.png" alt="Imagem representativa da criação de web sites">
                         <div>
                             <h3 class="title_card">Web Sites</h3>
-                            <h4 class="subtitle_card">Sistemas web com HTML, CSS, JS/TS e NextJS</h4>
+                            <h4 class="subtitle_card">Sistemas web com HTML, CSS, JS/TS</h4>
                         </div>
                     </div>
     
@@ -264,52 +264,6 @@
                         <span class="dot"></span>
                     </div>
                 </div>
-
-                <h3 class="title_tech">Sites desenvolvidos</h3>
-                <div class="slide_show_web">
-                    <div class="card_web_project fade">
-                        <a href="https://portfolio-desafio-trilhas.netlify.app" target="_blank">
-                            <div class="image_container">
-                                <img class="project_image" src="assets/projects/web/Portfolio-Inova-Trilhas.png" alt="Imagem representativa do site front-end Portfolio Inova Trilhas">
-                                <h3 class="title_card">Portfolio Inova Trilhas</h3>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="card_web_project fade">
-                        <a href="https://sistemainovatrilhas.netlify.app" target="_blank">
-                            <div class="image_container">
-                                <img class="project_image" src="assets/projects/web/Inova-Trilhas.png" alt="Imagem representativa do site front-end Sistema Inova Trilhas">
-                                <h3 class="title_card">Sistema Trilhas</h3>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="card_web_project fade">
-                        <a href="https://cineguia.netlify.app" target="_blank">
-                            <div class="image_container">
-                                <img class="project_image" src="assets/projects/web/Cine-Guia.png" alt="Imagem representativa do site Cine Guia">
-                                <h3 class="title_card">Cine Guia</h3>
-                            </div>
-                        </a>
-                    </div>
-
-                    <a class="prev_web" onclick="plusSlidesWeb(-1)">
-                        <img class="arrow" src="assets/images/Arrow.png" alt="">
-                    </a>
-
-                    <a class="next_web" onclick="plusSlidesWeb(1)">
-                        <img class="arrow" src="assets/images/Arrow-Next.png" alt="">
-                    </a>
-                </div>
-
-                <div class="dot_container">
-                    <div class="dots">
-                        <span class="dot_web" onclick="currentSlideWeb(1)"></span>
-                        <span class="dot_web" onclick="currentSlideWeb(2)"></span>
-                        <span class="dot_web" onclick="currentSlideWeb(3)"></span>
-                    </div>
-                </div>
         </section>
 
         <section id="contacts" class="contacts_section">
@@ -351,6 +305,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/slide.js"></script>
-    <script src="js/slide_web.js"></script>
 </body>
 </html>

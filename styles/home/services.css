@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Exo Semibold';
+    src: url(../../assets/fonts/Exo-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+}
+  
+@font-face {
+    font-family: 'Exo Medium';
+    src: url(../../assets/fonts/Exo-Medium.ttf) format('truetype');
+    font-weight: 500;
+}
+  
+@font-face {
+    font-family: 'Exo Regular';
+    src: url(../../assets/fonts/Exo-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+  
+@font-face {
+    font-family: 'Exo Light';
+    src: url(../../assets/fonts/Exo-Light.ttf) format('truetype');
+    font-weight: 300;
+}
+
+:root {
+    --primary-color: #111540;
+    --secundary-color: #363B73;
+    --white-color: #FFFFFF;
+    --text-color: #2D2D2D;
+    --purple: #6F74A6;
+    --purple-light: #BDBFD9;
+
+    --primary-color-025: rgb(17, 21, 64, 0.25);
+
+    --font-exo-light: "Exo Light", sans-serif;
+    --font-exo-regular: "Exo Regular", sans-serif;
+    --font-exo-medium: "Exo Medium", sans-serif;
+    --font-exo-semibold: "Exo Semibold", sans-serif;
+}
+
+.services_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 8% 10%;
+    gap: 32px;
+    border-bottom: 2px dashed var(--secundary-color);
+}
+
+.card_services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.service_image {
+    max-width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        gap: 16px;
+    }
+}

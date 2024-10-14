@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Exo Semibold';
+    src: url(../../assets/fonts/Exo-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+}
+  
+@font-face {
+    font-family: 'Exo Medium';
+    src: url(../../assets/fonts/Exo-Medium.ttf) format('truetype');
+    font-weight: 500;
+}
+  
+@font-face {
+    font-family: 'Exo Regular';
+    src: url(../../assets/fonts/Exo-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+  
+@font-face {
+    font-family: 'Exo Light';
+    src: url(../../assets/fonts/Exo-Light.ttf) format('truetype');
+    font-weight: 300;
+}
+
+:root {
+    --primary-color: #111540;
+    --secundary-color: #363B73;
+    --white-color: #FFFFFF;
+    --text-color: #2D2D2D;
+    --purple: #6F74A6;
+    --purple-light: #BDBFD9;
+
+    --primary-color-025: rgb(17, 21, 64, 0.25);
+
+    --font-exo-light: "Exo Light", sans-serif;
+    --font-exo-regular: "Exo Regular", sans-serif;
+    --font-exo-medium: "Exo Medium", sans-serif;
+}
+
+.contacts_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1440px;
+    padding: 4% 10%;
+    gap: 16px;
+}
+
+.title_contacts {
+    font-family: var(--font-exo-semibold);
+    font-size: 1.25rem;
+    color: var(--white-color);
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contact_form:hover {
+    cursor: pointer;
+    transform: scale(1.10);
+}
+
+.contact_form > img {
+    width: 30%;
+}
+
+.title_contact_form {
+    font-family: var(--font-exo-medium);
+    font-size: 1.25rem;
+    color: var(--white-color);
+    
+}
+
+.subtitle_contact_form {
+    font-family: var(--font-exo-light);
+    font-size: 1rem;
+    color: var(--white-color);
+}
+
+@media screen and (max-width: 768px) {
+    .contact_form > img {
+        width: 60%;
+    }
+
+    .title_contact_form {
+        font-size: 1rem;
+    }
+    
+    .subtitle_contact_form {
+        font-size: 0.875rem;
+    }
+}

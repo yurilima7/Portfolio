@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Exo Semibold';
+    src: url(../../assets/fonts/Exo-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+}
+  
+@font-face {
+    font-family: 'Exo Medium';
+    src: url(../../assets/fonts/Exo-Medium.ttf) format('truetype');
+    font-weight: 500;
+}
+  
+@font-face {
+    font-family: 'Exo Regular';
+    src: url(../../assets/fonts/Exo-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+  
+@font-face {
+    font-family: 'Exo Light';
+    src: url(../../assets/fonts/Exo-Light.ttf) format('truetype');
+    font-weight: 300;
+}
+
+:root {
+    --primary-color: #111540;
+    --secundary-color: #363B73;
+    --white-color: #FFFFFF;
+    --text-color: #2D2D2D;
+    --purple: #6F74A6;
+    --purple-light: #BDBFD9;
+
+    --primary-color-025: rgb(17, 21, 64, 0.25);
+
+    --font-exo-light: "Exo Light", sans-serif;
+    --font-exo-regular: "Exo Regular", sans-serif;
+    --font-exo-medium: "Exo Medium", sans-serif;
+    --font-exo-semibold: "Exo Semibold", sans-serif;
+}
+
+.dev_section {
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    padding: 8% 10%;
+}
+
+.dev_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    gap: 3px;
+}
+
+.title_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: var(--font-exo-medium);
+    font-size: 1.5rem;
+    color: var(--white-color);
+}
+
+.subtitle {
+    font-family: var(--font-exo-regular);
+    font-size: 1.25rem;
+    color: var(--white-color);
+}
+
+.socials {
+    display: flex;
+    margin-top: 16px;
+    gap: 10px;
+}
+
+.cv_button {
+    background-color: var(--secundary-color);
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: none;
+    font-family: var(--font-exo-medium);
+    font-size: 1rem;
+    color: var(--white-color);
+    cursor: pointer;
+    transition-duration: .5s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cv_button:hover {
+    background-color: var(--purple);
+}
+
+.social_button {
+    background-color: var(--white-color);
+    padding: 12px 22px;
+    border-radius: 10px;
+    border: none;
+    font-family: var(--font-exo-medium);
+    font-size: 1rem;
+    color: var(--secundary-color);
+    cursor: pointer;
+    transition-duration: .5s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social_button:hover {
+    background-color: var(--purple);
+    color: var(--white-color);
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 50%;
+}
+
+.profile_image {
+    width: 300px;
+    height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .dev_section {
+        height: 500px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .subtitle {
+        text-align: center;
+    }
+
+    .dev_info {
+        width: 100%;
+        align-items: center;
+    }
+
+    .profile {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile_image {
+        width: 200px;
+        height: 200px;
+    }
+}

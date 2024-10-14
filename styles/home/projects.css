@@ -2,25 +2,25 @@
 
 @font-face {
     font-family: 'Exo Semibold';
-    src: url(../assets/fonts/Exo-SemiBold.ttf) format('truetype');
+    src: url(../../assets/fonts/Exo-SemiBold.ttf) format('truetype');
     font-weight: 600;
 }
   
 @font-face {
     font-family: 'Exo Medium';
-    src: url(../assets/fonts/Exo-Medium.ttf) format('truetype');
+    src: url(../../assets/fonts/Exo-Medium.ttf) format('truetype');
     font-weight: 500;
 }
   
 @font-face {
     font-family: 'Exo Regular';
-    src: url(../assets/fonts/Exo-Regular.ttf) format('truetype');
+    src: url(../../assets/fonts/Exo-Regular.ttf) format('truetype');
     font-weight: 400;
 }
   
 @font-face {
     font-family: 'Exo Light';
-    src: url(../assets/fonts/Exo-Light.ttf) format('truetype');
+    src: url(../../assets/fonts/Exo-Light.ttf) format('truetype');
     font-weight: 300;
 }
 
@@ -56,14 +56,12 @@
     color: var(--text-color);
 }
 
-.slide_show_web,
 .slide_show {
     display: flex;
     position: relative;
     width: 100%;
 }
 
-.card_web_project,
 .card_project {
     display: flex;
     flex: 1 1 50%;
@@ -86,7 +84,6 @@
     to { opacity: 1; }
 }
 
-.prev_web, .next_web,
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -101,7 +98,6 @@
     user-select: none;
 }
 
-.prev_web,
 .prev {
     display: flex;
     justify-content: center;
@@ -110,7 +106,6 @@
     border-radius: 50%;
 }
 
-.next_web,
 .next {
     display: flex;
     justify-content: center;
@@ -119,7 +114,6 @@
     border-radius: 50%;
 }
 
-.prev_web:hover, .next_web:hover,
 .prev:hover, .next:hover {
     background-color: var(--primary-color);
 }
@@ -140,7 +134,6 @@
     gap: 10px;
 }
 
-.dot_web,
 .dot {
     cursor: pointer;
     height: 8px;
@@ -151,13 +144,11 @@
     transition: background-color 0.6s ease;
 }
 
-.active_web, .dot_web:hover,
 .active, .dot:hover {
     background-color: var(--purple);
 }
 
 @media screen and (max-width: 768px) {
-    .card_web_project,
     .card_project {
         flex: 1 100%;
     }
