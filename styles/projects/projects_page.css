@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Exo Semibold';
+    src: url(../../assets/fonts/Exo-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+}
+  
+@font-face {
+    font-family: 'Exo Medium';
+    src: url(../../assets/fonts/Exo-Medium.ttf) format('truetype');
+    font-weight: 500;
+}
+  
+@font-face {
+    font-family: 'Exo Regular';
+    src: url(../../assets/fonts/Exo-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+  
+@font-face {
+    font-family: 'Exo Light';
+    src: url(../../assets/fonts/Exo-Light.ttf) format('truetype');
+    font-weight: 300;
+}
+
+:root {
+    --primary-color: #111540;
+    --secundary-color: #363B73;
+    --white-color: #FFFFFF;
+    --text-color: #2D2D2D;
+    --purple: #6F74A6;
+    --purple-light: #BDBFD9;
+
+    --primary-color-025: rgb(17, 21, 64, 0.25);
+
+    --font-exo-light: "Exo Light", sans-serif;
+    --font-exo-regular: "Exo Regular", sans-serif;
+    --font-exo-medium: "Exo Medium", sans-serif;
+    --font-exo-semibold: "Exo Semibold", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10%;
+}
+
+body {
+    background-color: var(--white-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-bottom: 2px solid var(--white-color);
+    z-index: 999;
+}
+
+nav {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    height: 80px;
+    transition: 0.3s ease;
+}
+
+.logo_project {
+    width: 150px;
+}
+
+main {
+    background-color: var(--primary-color);
+    margin-top: 80px;
+}
+
+.links_section {
+    background-color: var(--white-color);
+}
+
+.project_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 6% 10%;
+    gap: 16px;
+}
+
+.slide_show {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.print_project {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.image_container {
+    width: 200px;
+    padding: 0 16px;
+}
+
+.project_image {
+    width: 200px;
+    cursor: pointer;
+}
+
+.link_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 8% 10%;
+    gap: 10px;
+}
+
+.title {
+    font-family: var(--font-exo-medium);
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.section_subtitle {
+    font-family: var(--font-exo-medium);
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+
+.social_icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social_img {
+    width: 40px;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: -30px;
+    color: var(--white-color);
+    background-color: var(--primary-color-025);
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    border-radius: 50%;
+}
+
+.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0px;
+    border-radius: 50%;
+}
+
+.prev:hover, .next:hover {
+    background-color: var(--purple);
+}
+
+.arrow {
+    width: 10px;
+}
+
+.dot_container {
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    gap: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    background-color: var(--purple-light);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: var(--purple);
+}
+
+@media screen and (max-width: 768px) {
+    .print_project {
+        flex: 1 100%;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .image_container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .project_image {
+        width: 150px;
+    }
+}
