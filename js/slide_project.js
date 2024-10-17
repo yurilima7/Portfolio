@@ -1,7 +1,6 @@
 let slideIndex = 1;
 let valueBack = 0;
 
-
 showSlides(slideIndex);
 
 window.addEventListener('resize', () => {
@@ -26,7 +25,22 @@ function showSlides(n) {
     const arraySlides = Array.from(slideShow.getElementsByClassName("print_project"));
 
     let totalSlides = slides.length;
-    let isWideScreen = window.innerWidth >= 768;
+    let screenWidth = window.innerWidth;
+    let isWideScreen = screenWidth >= 480;
+    let slidesToShow;
+
+    if (screenWidth >= 1440) {
+        slidesToShow = 5;
+    } 
+    else if (screenWidth >= 1024 && screenWidth < 1440) {
+        slidesToShow = 4;
+    } else if (screenWidth >= 768 && screenWidth < 1024) {
+        slidesToShow = 3;
+    } else if (screenWidth >= 480 && screenWidth < 768) {
+        slidesToShow = 2;
+    } else {
+        slidesToShow = 1;
+    }
 
     if (n > totalSlides) { slideIndex = 1; }
     if (n < 1) { slideIndex = totalSlides; } 
@@ -43,21 +57,19 @@ function showSlides(n) {
     dots[newIndex].className += " active";
 
     if (isWideScreen) {
-        if (n > valueBack) {  // Avançar no slideshow
-            const firstSlide = arraySlides.shift();  // Remove o primeiro slide
-            arraySlides.push(firstSlide);            // Adiciona ao final
-        } else if (n < valueBack) {  // Voltar no slideshow
-            const lastSlide = arraySlides.pop();     // Remove o último slide
-            arraySlides.unshift(lastSlide);          // Adiciona no início
+        if (n > valueBack) {
+            const firstSlide = arraySlides.shift();
+            arraySlides.push(firstSlide);
+        } else if (n < valueBack) {
+            const lastSlide = arraySlides.pop();
+            arraySlides.unshift(lastSlide);
         }
 
-        // Reanexa os slides reorganizados no container
         arraySlides.forEach(slide => {
             slideShow.appendChild(slide);
         });
 
-        // Exibe os primeiros 5 slides reorganizados
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < slidesToShow; i++) {
             arraySlides[i].style.display = "flex";
         }
     } else {

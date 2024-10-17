@@ -84,17 +84,13 @@ main {
     margin-top: 80px;
 }
 
-.links_section {
-    background-color: var(--white-color);
-}
-
 .project_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 6% 10%;
+    padding: 2% 10%;
     gap: 16px;
 }
 
@@ -105,6 +101,8 @@ main {
 }
 
 .print_project {
+    display: flex;
+    justify-content: center;
     flex: 0 0 20%;
     max-width: 20%;
 }
@@ -119,13 +117,21 @@ main {
     cursor: pointer;
 }
 
+.tech_section,
+.description_section,
+.links_section {
+    background-color: var(--white-color);
+}
+
+.tech_container,
+.description_container,
 .link_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 8% 10%;
+    padding: 2% 10%;
     gap: 10px;
 }
 
@@ -141,6 +147,12 @@ main {
     color: var(--text-color);
 }
 
+.tertiary_title {
+    font-family: var(--font-exo-medium);
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
 .social_icons {
     display: flex;
     gap: 10px;
@@ -148,6 +160,29 @@ main {
 
 .social_img {
     width: 40px;
+}
+
+.paragraph {
+    font-family: var(--font-exo-regular);
+    font-size: 1.125rem;
+    text-align: justify;
+    color: var(--text-color);
+}
+
+.tech {
+    display: flex;
+    gap: 40px;
+}
+
+.tech_description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.tech_logo {
+    width: 45px;
 }
 
 @keyframes fade {
@@ -219,7 +254,58 @@ main {
     background-color: var(--purple);
 }
 
+@media screen and (max-width: 1440px) {
+    .slide_show {
+        justify-content: space-between;
+    }
+
+    .print_project {
+        max-width: 100%;
+    }
+
+    .image_container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project_image {
+        width: 190px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .slide_show {
+        justify-content: space-between;
+    }
+
+    .print_project {
+        max-width: 100%;
+    }
+
+    .project_image {
+        width: 180px;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    .slide_show {
+        justify-content: space-between;
+    }
+
+    .print_project {
+        max-width: 100%;
+    }
+    
+    .project_image {
+        width: 150px;
+    }
+
+    .paragraph { 
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
     .print_project {
         flex: 1 100%;
         align-items: center;

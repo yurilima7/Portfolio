@@ -59,7 +59,7 @@
 
 .paragraph {
     font-family: var(--font-exo-regular);
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     text-align: justify;
     color: var(--text-color);
 }
