@@ -78,3 +78,31 @@ function showSlides(n) {
 
     valueBack = n;
 }
+
+// Pega a modal
+const modal = document.getElementById('imageModal');
+const modalImg = document.getElementById('modalImage');
+const closeBtn = document.getElementsByClassName('close')[0];
+
+// Pega todas as imagens com a classe 'project_image'
+const images = document.getElementsByClassName('project_image');
+
+// Adiciona um evento de clique a cada imagem
+for (let i = 0; i < images.length; i++) {
+    images[i].onclick = function() {
+        modal.style.display = "flex"; // Exibe a modal
+        modalImg.src = this.src; // Define a imagem da modal como a imagem clicada
+    }
+}
+
+// Quando o usuário clica no botão de fechar, fecha a modal
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Quando o usuário clica fora da imagem, também fecha a modal
+modal.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}
