@@ -1,9 +1,12 @@
 let slideIndex = 1;
 let valueBack = 0;
+let timeout;
 
 showSlides(slideIndex);
 
 window.addEventListener('resize', () => {
+    clearTimeout(timeout);
+    timeout = setTimeout(showSlides, 200);
     showSlides(slideIndex);
 });
 
@@ -78,28 +81,23 @@ function showSlides(n) {
     valueBack = n;
 }
 
-// Pega a modal
 const modal = document.getElementById('imageModal');
 const modalImg = document.getElementById('modalImage');
 const closeBtn = document.getElementsByClassName('close')[0];
 
-// Pega todas as imagens com a classe 'project_image'
 const images = document.getElementsByClassName('project_image');
 
-// Adiciona um evento de clique a cada imagem
 for (let i = 0; i < images.length; i++) {
     images[i].onclick = function() {
-        modal.style.display = "flex"; // Exibe a modal
-        modalImg.src = this.src; // Define a imagem da modal como a imagem clicada
+        modal.style.display = "flex"; 
+        modalImg.src = this.src; 
     }
 }
 
-// Quando o usuário clica no botão de fechar, fecha a modal
 closeBtn.onclick = function() {
     modal.style.display = "none";
 }
 
-// Quando o usuário clica fora da imagem, também fecha a modal
 modal.onclick = function(event) {
     if (event.target === modal) {
         modal.style.display = "none";
