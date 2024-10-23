@@ -31,12 +31,11 @@ function showSlides(n) {
 
     if (screenWidth >= 1440) {
         slidesToShow = 5;
-    } 
-    else if (screenWidth >= 1024 && screenWidth < 1440) {
+    } else if (screenWidth >= 1024) {
         slidesToShow = 4;
-    } else if (screenWidth >= 768 && screenWidth < 1024) {
+    } else if (screenWidth >= 768) {
         slidesToShow = 3;
-    } else if (screenWidth >= 480 && screenWidth < 768) {
+    } else if (screenWidth >= 480) {
         slidesToShow = 2;
     } else {
         slidesToShow = 1;

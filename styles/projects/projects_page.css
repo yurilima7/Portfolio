@@ -220,6 +220,14 @@ main {
     gap: 10px;
 }
 
+.social_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
 .social_img {
     width: 40px;
 }
