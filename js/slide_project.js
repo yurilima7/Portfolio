@@ -1,12 +1,9 @@
 let slideIndex = 1;
 let valueBack = 0;
-let timeout;
 
 showSlides(slideIndex);
 
 window.addEventListener('resize', () => {
-    clearTimeout(timeout);
-    timeout = setTimeout(showSlides, 200);
     showSlides(slideIndex);
 });
 
@@ -28,8 +25,7 @@ function showSlides(n) {
     const arraySlides = Array.from(slideShow.getElementsByClassName("print_project"));
 
     let totalSlides = slides.length;
-    let screenWidth = window.innerWidth;
-    let isWideScreen = screenWidth >= 480;
+    let screenWidth = document.documentElement.clientWidth;
     let slidesToShow;
 
     if (screenWidth >= 1440) {
@@ -58,24 +54,20 @@ function showSlides(n) {
     let newIndex = slideIndex - 1;
     dots[newIndex].className += " active";
 
-    if (isWideScreen) {
-        if (n > valueBack) {
-            const firstSlide = arraySlides.shift();
-            arraySlides.push(firstSlide);
-        } else if (n < valueBack) {
-            const lastSlide = arraySlides.pop();
-            arraySlides.unshift(lastSlide);
-        }
+    if (n > valueBack) {
+        const firstSlide = arraySlides.shift();
+        arraySlides.push(firstSlide);
+    } else if (n < valueBack) {
+        const lastSlide = arraySlides.pop();
+        arraySlides.unshift(lastSlide);
+    }
 
-        arraySlides.forEach(slide => {
-            slideShow.appendChild(slide);
-        });
+    arraySlides.forEach(slide => {
+        slideShow.appendChild(slide);
+    });
 
-        for (let i = 0; i < slidesToShow; i++) {
-            arraySlides[i].style.display = "flex";
-        }
-    } else {
-        slides[newIndex].style.display = "flex";
+    for (let i = 0; i < slidesToShow; i++) {
+        arraySlides[i].style.display = "flex";
     }
 
     valueBack = n;
