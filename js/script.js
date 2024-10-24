@@ -101,11 +101,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const downloadButton = document.getElementById('download_cv');
 
     downloadButton.addEventListener('click', () => {
-        const pdfFilePath = 'assets/docs/Currículo.pdf';
+        const pdfFilePath = 'assets/docs/Currículo-Yuri-Lima.pdf';
         const link = document.createElement('a');
 
         link.href = pdfFilePath;
-        link.download = 'Curriculo.pdf';
+        link.download = 'Currículo-Yuri-Lima.pdf';
         link.target = '_blank';
 
         document.body.appendChild(link);
